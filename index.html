@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institucional - Alencar</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #000;
+        transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+        background-color: #121212;
+        color: #f5f5f5;
+        }
+
+        header {
+        background-color: #003366;
+        color: white;
+        padding: 1rem 2rem;
+        }
+
+        body.dark-mode header {
+        background-color: #1e1e1e;
+        }
+
+        .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+
+        .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        }
+
+        nav {
+        display: flex;
+        gap: 1.5rem;
+        }
+
+        nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        }
+
+        .menu-toggle {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        }
+
+        .dark-mode nav a {
+        color: #f5f5f5;
+        }
+
+        .dark-mode .dark-toggle {
+        background-color: #333;
+        color: #f5f5f5;
+        }
+
+        .dark-toggle {
+        background-color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        margin-left: 1rem;
+        border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+        nav {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #003366;
+            margin-top: 1rem;
+        }
+
+        nav.active {
+            display: flex;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        .dark-mode nav {
+            background-color: #1e1e1e;
+        }
+        }
+
+        footer {
+        background-color: #222;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+        }
+
+        .dark-mode footer {
+        background-color: #111;
+        }
+
+        footer p {
+        margin-bottom: 0.5rem;
+        }
+    </style>
+    </head>
+
+    <body>
+    <header>
+        <div class="container">
+        <div class="logo">Alencar Consultorias</div>
+        <div>
+            <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+        <nav id="nav">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Outras seções serão adicionadas posteriormente -->
+
+    <footer>
+        <p>&copy; 2025 Alencar Consultorias. Todos os direitos reservados.</p>
+        <p>Email: contato@alencarconsultorias.com.br</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+        }
+
+        function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        }
+    </script>
+    </body>
+</html>
