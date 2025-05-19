@@ -1,5 +1,11 @@
 # website-alencar
 
+## 🌐 Executando o Next.js
+```bash
+cd next-website-alencar 
+npm run dev
+```
+
 ## 🚩 Contribuindo
 Consulte o arquivo [CONTRIBUTING.md](/docs-org/CONTRIBUTING.md) para instruções.
 
