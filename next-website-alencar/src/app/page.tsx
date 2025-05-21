@@ -1,154 +1,103 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-800">
-      {/* Header Moderno */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-blue-700">Alencar Consultorias</div>
-          <nav className="space-x-6 text-sm font-medium text-gray-600">
-            <a href="#sobre" className="hover:text-blue-700">Sobre</a>
-            <a href="#servicos" className="hover:text-blue-700">Serviços</a>
-            <a href="#contato" className="hover:text-blue-700">Contato</a>
-          </nav>
-        </div>
-      </header>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <Image
+          className="dark:invert"
+          src="/next.svg"
+          alt="Next.js logo"
+          width={180}
+          height={38}
+          priority
+        />
+        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li className="mb-2 tracking-[-.01em]">
+            Get started by editing{" "}
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
+              src/app/page.tsx
+            </code>
+            .
+          </li>
+          <li className="tracking-[-.01em]">
+            Save and see your changes instantly.
+          </li>
+        </ol>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Soluções em Tecnologia para o Sucesso do Seu Negócio
-          </h1>
-          <p className="text-lg md:text-xl mb-8">
-            A Alencar Consultorias oferece serviços em Comercial, Implantação, Suporte, Marketing e Desenvolvimento.
-          </p>
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
-            href="#servicos"
-            className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-100 transition"
-          >
-            Conheça nossos serviços
-          </a>
-        </div>
-      </section>
-
-      {/* Sobre */}
-      <section className="py-16 px-6" id="sobre">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Sobre a Alencar Consultorias</h2>
-          <p className="text-lg text-gray-600">
-            Atuamos com foco em tecnologia, independentemente da área de atuação do cliente. Nosso objetivo 
-            é entregar qualidade onde houver falta de controle, gestão ou processos não padronizados.
-          </p>
-        </div>
-      </section>
-
-      {/* Serviços */}
-      <section className="bg-gray-50 py-16 px-6" id="servicos">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                titulo: 'Comercial',
-                descricao: 'Apoiamos a venda de produtos tecnológicos com foco em resultado.',
-              },
-              {
-                titulo: 'Implantação',
-                descricao: 'Implementação de soluções com acompanhamento técnico e estratégico.',
-              },
-              {
-                titulo: 'Suporte',
-                descricao: 'Atendimento rápido e eficiente com foco na satisfação do cliente.',
-              },
-              {
-                titulo: 'Marketing',
-                descricao: 'Estratégias para posicionar sua marca e alavancar seus canais digitais.',
-              },
-              {
-                titulo: 'Desenvolvimento',
-                descricao: 'Em breve: soluções sob medida com foco em performance e escalabilidade.',
-              },
-            ].map((s, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold mb-2">{s.titulo}</h3>
-                <p className="text-gray-600">{s.descricao}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Cliente principal */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Nosso Cliente Principal</h2>
-          <p className="text-lg text-gray-700 mb-4">
-            Atuamos fortemente com a <strong>Vallysys Sistemas</strong>, oferecendo venda, suporte, implantação 
-            e serviços administrativos da plataforma.
-          </p>
-          <a
-            href="https://www.vallysyssistemas.com.br"
-            className="text-blue-700 font-medium hover:underline"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            Acesse o site da Vallysys →
+            <Image
+              className="dark:invert"
+              src="/vercel.svg"
+              alt="Vercel logomark"
+              width={20}
+              height={20}
+            />
+            Deploy now
+          </a>
+          <a
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read our docs
           </a>
         </div>
-      </section>
-
-      {/* Contato */}
-      <section className="bg-blue-700 text-white py-16 px-6" id="contato">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Entre em contato</h2>
-          <p className="mb-6">
-            Estamos prontos para ajudar seu negócio a crescer com tecnologia.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <a
-              href="https://www.instagram.com/alencarconsultorias/"
-              className="bg-white text-blue-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100"
-              target="_blank"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.linkedin.com/company/alencar-consultorias/"
-              className="bg-white text-blue-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer Moderno */}
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Alencar Consultorias</h3>
-            <p className="text-gray-400">Tecnologia e gestão para o futuro do seu negócio.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Links úteis</h4>
-            <ul className="space-y-1">
-              <li><a href="#sobre" className="hover:underline text-gray-300">Sobre</a></li>
-              <li><a href="#servicos" className="hover:underline text-gray-300">Serviços</a></li>
-              <li><a href="#contato" className="hover:underline text-gray-300">Contato</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Redes Sociais</h4>
-            <ul className="space-y-1">
-              <li><a href="https://www.instagram.com/alencarconsultorias/" target="_blank" className="hover:underline text-gray-300">Instagram</a></li>
-              <li><a href="https://www.linkedin.com/company/alencar-consultorias/" target="_blank" className="hover:underline text-gray-300">LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="text-center text-xs text-gray-500 mt-8">
-          © {new Date().getFullYear()} Alencar Consultorias. Todos os direitos reservados.
-        </div>
+      </main>
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            width={16}
+            height={16}
+          />
+          Learn
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/window.svg"
+            alt="Window icon"
+            width={16}
+            height={16}
+          />
+          Examples
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/globe.svg"
+            alt="Globe icon"
+            width={16}
+            height={16}
+          />
+          Go to nextjs.org →
+        </a>
       </footer>
-    </main>
+    </div>
   );
 }

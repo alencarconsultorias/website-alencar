@@ -2,8 +2,13 @@
 
 ## 🌐 Executando o Next.js
 ```bash
+# rodando localhost 
 cd next-website-alencar 
 npm run dev
+
+# rodando em producaao 
+npm build 
+npm start
 ```
 
 ## 🚩 Contribuindo
