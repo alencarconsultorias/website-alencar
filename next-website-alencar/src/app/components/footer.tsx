@@ -1,3 +1,4 @@
+
 export default function Footer() {
   return (
     <footer className="bg-neutral-950 text-white px-6 py-12">
@@ -24,7 +25,7 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold mb-2">Contato</h3>
           <ul className="space-y-1 text-neutral-400 text-sm">
-            <li>Email: contato@empresa.com</li>
+            <li>Email: contato@alencarconsultorias.com.br</li>
             <li>Telefone: (00) 0000-0000</li>
             <li>Endereço: Av. Exemplo, 123 - São Paulo/SP</li>
           </ul>
