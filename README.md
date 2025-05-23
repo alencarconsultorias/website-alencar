@@ -6,7 +6,7 @@
 cd next-website-alencar 
 npm run dev
 
-# rodando em producaao 
+# rodando em producao 
 npm build 
 npm start
 ```
