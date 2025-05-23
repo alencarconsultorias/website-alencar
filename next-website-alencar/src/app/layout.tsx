@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alencar Consultorias",
   description: "Site institucional da Alencar Consultorias",
+  viewport: { // configuration for mobile devices
+    width: "device-width",
+    initialScale: 1, 
+  },
 };
 
 export default function RootLayout({

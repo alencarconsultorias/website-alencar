@@ -26,6 +26,9 @@ export default function Header() {
           <Link href="/equipe" className="text-gray-800 hover:text-blue-600 transition">
             Equipe
           </Link>
+          <Link href="/mobile" className="text-gray-800 hover:text-blue-600 transition">
+            Mobile
+          </Link>
         </nav>
 
         {/* Botão CTA */}
