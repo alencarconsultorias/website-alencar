@@ -1,4 +1,4 @@
-import { FaHeadset, FaTools, FaChartLine, FaUsers, FaClock } from 'react-icons/fa';
+import { FaHeadset, FaTools, FaChartLine, FaUsers, FaClock, FaFileAlt, FaProjectDiagram, FaCheckCircle, FaChartBar, FaClipboardCheck } from 'react-icons/fa';
 
 export default function Servicos() {
   const categoriasServicos = [
@@ -40,7 +40,39 @@ export default function Servicos() {
     },
     {
       titulo: "Implantação de Software",
-      servicos: []
+      servicos: [
+        {
+          titulo: "Implantação Eficiente e Documentada",
+          descricao: "Nossa metodologia de implantação é focada em eficiência e qualidade, utilizando ferramentas avançadas de gestão de projetos e documentação detalhada para garantir o sucesso da implementação.",
+          caracteristicas: [
+            {
+              titulo: "Gestão de Projetos Avançada",
+              icone: <FaProjectDiagram className="w-6 h-6 text-blue-500" />,
+              descricao: "Utilizamos ferramentas modernas de acompanhamento de projetos para garantir prazos e qualidade"
+            },
+            {
+              titulo: "Documentação Detalhada",
+              icone: <FaFileAlt className="w-6 h-6 text-green-500" />,
+              descricao: "Processos e procedimentos documentados com precisão para facilitar a manutenção"
+            },
+            {
+              titulo: "Metodologia Ágil",
+              icone: <FaChartBar className="w-6 h-6 text-purple-500" />,
+              descricao: "Sprints bem definidos com entregas incrementais e feedback constante"
+            },
+            {
+              titulo: "Controle de Qualidade",
+              icone: <FaCheckCircle className="w-6 h-6 text-orange-500" />,
+              descricao: "Testes rigorosos e validações em cada etapa do processo"
+            },
+            {
+              titulo: "Checklist de Implantação",
+              icone: <FaClipboardCheck className="w-6 h-6 text-red-500" />,
+              descricao: "Processos padronizados que reduzem o tempo de implementação"
+            }
+          ]
+        }
+      ]
     },
     {
       titulo: "Venda de Software",
