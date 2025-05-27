@@ -30,12 +30,14 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full px-6 py-4 bg-black/95 backdrop-blur-sm shadow-md fixed top-0 z-50 border-b border-yellow-400/20">
+    <header className="w-full px-6 py-1.5 bg-black/95 backdrop-blur-sm shadow-md fixed top-0 z-50 border-b border-yellow-400/20">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
+        <div className="h-16 overflow-hidden flex items-center">
         <Link href="/">
-          <img src="/next.svg" alt="Logo" className="h-10" />
+          <img src="/images/logo.svg" alt="Logo Alencar" className="h-20 object-contain" />
         </Link>
+      </div>
 
         {/* Navegação */}
         <nav className="hidden md:flex space-x-8">
