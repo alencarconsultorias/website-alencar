@@ -2,7 +2,8 @@ import {
   FaHeadset, FaTools, FaChartLine, FaUsers, FaClock, 
   FaFileAlt, FaProjectDiagram, FaCheckCircle, FaChartBar, 
   FaClipboardCheck, FaSalesforce, FaHandshake, FaChartPie,
-  FaUserTie, FaLightbulb
+  FaUserTie, FaLightbulb, FaBullhorn, FaSearch, FaShareAlt,
+  FaMobile, FaBullseye, FaRocket
 } from 'react-icons/fa';
 
 export default function Servicos() {
@@ -117,7 +118,70 @@ export default function Servicos() {
     },
     {
       titulo: "Marketing",
-      servicos: []
+      servicos: [
+        {
+          titulo: "Marketing Digital Integrado",
+          descricao: "Desenvolvemos estratégias de marketing digital completas e integradas, combinando diferentes canais e ferramentas para maximizar o alcance e os resultados das suas campanhas.",
+          caracteristicas: [
+            {
+              titulo: "Marketing de Performance",
+              icone: <FaBullseye className="w-6 h-6 text-blue-500" />,
+              descricao: "Campanhas otimizadas com foco em resultados e ROI mensurável"
+            },
+            {
+              titulo: "SEO e SEM",
+              icone: <FaSearch className="w-6 h-6 text-green-500" />,
+              descricao: "Otimização para mecanismos de busca e gestão de anúncios patrocinados"
+            },
+            {
+              titulo: "Social Media",
+              icone: <FaShareAlt className="w-6 h-6 text-purple-500" />,
+              descricao: "Gestão completa de redes sociais e criação de conteúdo engajante"
+            },
+            {
+              titulo: "Marketing Mobile",
+              icone: <FaMobile className="w-6 h-6 text-orange-500" />,
+              descricao: "Estratégias específicas para dispositivos móveis e apps"
+            },
+            {
+              titulo: "Growth Hacking",
+              icone: <FaRocket className="w-6 h-6 text-red-500" />,
+              descricao: "Técnicas inovadoras para crescimento acelerado e escalável"
+            }
+          ]
+        },
+        {
+          titulo: "Estratégias de Conteúdo",
+          descricao: "Criamos e gerenciamos conteúdo estratégico que gera valor para sua marca, atrai leads qualificados e fortalece sua autoridade no mercado.",
+          caracteristicas: [
+            {
+              titulo: "Content Marketing",
+              icone: <FaFileAlt className="w-6 h-6 text-blue-500" />,
+              descricao: "Desenvolvimento de conteúdo relevante e estratégico para seu público"
+            },
+            {
+              titulo: "Email Marketing",
+              icone: <FaBullhorn className="w-6 h-6 text-green-500" />,
+              descricao: "Campanhas de email personalizadas e automatizadas"
+            },
+            {
+              titulo: "Inbound Marketing",
+              icone: <FaChartLine className="w-6 h-6 text-purple-500" />,
+              descricao: "Atração e conversão de leads através de conteúdo de valor"
+            },
+            {
+              titulo: "Marketing de Influência",
+              icone: <FaUsers className="w-6 h-6 text-orange-500" />,
+              descricao: "Parcerias estratégicas com influenciadores do seu setor"
+            },
+            {
+              titulo: "Análise de Resultados",
+              icone: <FaChartPie className="w-6 h-6 text-red-500" />,
+              descricao: "Métricas e KPIs para acompanhamento de performance"
+            }
+          ]
+        }
+      ]
     }
   ];
 
