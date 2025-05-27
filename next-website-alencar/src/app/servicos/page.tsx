@@ -1,4 +1,9 @@
-import { FaHeadset, FaTools, FaChartLine, FaUsers, FaClock, FaFileAlt, FaProjectDiagram, FaCheckCircle, FaChartBar, FaClipboardCheck } from 'react-icons/fa';
+import { 
+  FaHeadset, FaTools, FaChartLine, FaUsers, FaClock, 
+  FaFileAlt, FaProjectDiagram, FaCheckCircle, FaChartBar, 
+  FaClipboardCheck, FaSalesforce, FaHandshake, FaChartPie,
+  FaUserTie, FaLightbulb
+} from 'react-icons/fa';
 
 export default function Servicos() {
   const categoriasServicos = [
@@ -76,7 +81,39 @@ export default function Servicos() {
     },
     {
       titulo: "Venda de Software",
-      servicos: []
+      servicos: [
+        {
+          titulo: "Vendas Estratégicas com Salesforce",
+          descricao: "Utilizamos o Salesforce, a plataforma líder em CRM, combinada com nossa metodologia única de vendas para maximizar resultados e criar relacionamentos duradouros com nossos clientes.",
+          caracteristicas: [
+            {
+              titulo: "Salesforce Enterprise",
+              icone: <FaSalesforce className="w-6 h-6 text-blue-500" />,
+              descricao: "Utilizamos a versão Enterprise do Salesforce para gestão completa do ciclo de vendas"
+            },
+            {
+              titulo: "Metodologia Única",
+              icone: <FaLightbulb className="w-6 h-6 text-green-500" />,
+              descricao: "Processo de vendas personalizado e otimizado para o mercado brasileiro"
+            },
+            {
+              titulo: "Análise de Dados",
+              icone: <FaChartPie className="w-6 h-6 text-purple-500" />,
+              descricao: "Relatórios e dashboards avançados para tomada de decisão estratégica"
+            },
+            {
+              titulo: "Equipe Especializada",
+              icone: <FaUserTie className="w-6 h-6 text-orange-500" />,
+              descricao: "Profissionais certificados em Salesforce e com vasta experiência em vendas"
+            },
+            {
+              titulo: "Gestão de Relacionamento",
+              icone: <FaHandshake className="w-6 h-6 text-red-500" />,
+              descricao: "Acompanhamento completo do ciclo de vida do cliente"
+            }
+          ]
+        }
+      ]
     },
     {
       titulo: "Marketing",
