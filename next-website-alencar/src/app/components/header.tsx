@@ -30,7 +30,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full px-6 py-4 bg-white shadow-md fixed top-0 z-50">
+    <header className="w-full px-6 py-4 bg-black/95 backdrop-blur-sm shadow-md fixed top-0 z-50 border-b border-yellow-400/20">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
@@ -39,7 +39,7 @@ export default function Header() {
 
         {/* Navegação */}
         <nav className="hidden md:flex space-x-8">
-          <Link href="/" className="text-gray-800 hover:text-blue-600 transition">
+          <Link href="/" className="text-gray-300 hover:text-yellow-400 transition">
             Início
           </Link>
           
@@ -50,7 +50,7 @@ export default function Header() {
             onMouseLeave={() => setIsServicesOpen(false)}
           >
             <div className="flex items-center cursor-pointer">
-              <span className="text-gray-800 group-hover:text-blue-600 transition">Serviços</span>
+              <span className="text-gray-300 group-hover:text-yellow-400 transition">Serviços</span>
               <svg 
                 className={`w-4 h-4 ml-1 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} 
                 fill="none" 
@@ -63,7 +63,7 @@ export default function Header() {
 
             {/* Submenu */}
             <div 
-              className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-2 transition-all duration-200 ${
+              className={`absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-sm rounded-lg shadow-lg py-2 transition-all duration-200 border border-yellow-400/20 ${
                 isServicesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}
             >
@@ -71,39 +71,39 @@ export default function Header() {
                 <Link
                   key={index}
                   href={servico.href}
-                  className="block px-4 py-3 hover:bg-gray-50 transition-colors"
+                  className="block px-4 py-3 hover:bg-yellow-400/10 transition-colors"
                   onClick={() => setIsServicesOpen(false)}
                 >
-                  <div className="font-semibold text-gray-800 hover:text-blue-600 transition-colors">
+                  <div className="font-semibold text-gray-300 hover:text-yellow-400 transition-colors">
                     {servico.titulo}
                   </div>
-                  <div className="text-sm text-gray-600">{servico.descricao}</div>
+                  <div className="text-sm text-gray-400">{servico.descricao}</div>
                 </Link>
               ))}
             </div>
           </div>
 
-          <Link href="/cases" className="text-gray-800 hover:text-blue-600 transition">
+          <Link href="/cases" className="text-gray-300 hover:text-yellow-400 transition">
             Cases
           </Link>
-          <Link href="/sobre" className="text-gray-800 hover:text-blue-600 transition">
+          <Link href="/sobre" className="text-gray-300 hover:text-yellow-400 transition">
             Sobre
           </Link>
-          <Link href="/equipe" className="text-gray-800 hover:text-blue-600 transition">
+          <Link href="/equipe" className="text-gray-300 hover:text-yellow-400 transition">
             Equipe
           </Link>
-          <Link href="/mobile" className="text-gray-800 hover:text-blue-600 transition">
+          <Link href="/mobile" className="text-gray-300 hover:text-yellow-400 transition">
             Mobile
           </Link>
         </nav>
 
         {/* Botão CTA */}
         <Link href="/contato">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full transition">
+          <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-2 rounded-full transition">
             Fale com a gente
           </button>
         </Link>
       </div>
     </header>
-  )
+  );
 }
