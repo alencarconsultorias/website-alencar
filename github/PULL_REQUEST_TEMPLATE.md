@@ -11,6 +11,8 @@ Descreva claramente o que foi feito, o contexto da tarefa no Jira (objetivo, cri
 **Tipo da tarefa**: (Story / Task / Bug / Spike / Epic)  
 **Status atual**: (To Do / In Progress / Code Review / Done)
 
+**🚨 Caso seja mais de uma tarefa no PR, repetir o mesmo cabeçalho.** 
+
 # 🔄 Tipo de Mudança
 
 - [ ] Correção de bug 🐛
