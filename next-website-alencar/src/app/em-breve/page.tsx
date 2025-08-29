@@ -1,5 +1,5 @@
 import ComingSoon from '../components/ComingSoon';
 
-export default function Mobile() {
+export default function EmBreve() {
   return <ComingSoon />;
 }
