@@ -1,9 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-import Header from "./components/header";
-import Footer from "./components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alencar Consultorias",
   description: "Site institucional da Alencar Consultorias",
-  viewport: { // configuration for mobile devices
-    width: "device-width",
-    initialScale: 1, 
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -30,13 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        <main className="pt-16 pb-12 min-h-screen">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
