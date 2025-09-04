@@ -8,7 +8,8 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 ---
 
 ## [Unreleased] - YYYY-MM-DD
-
+### Alterado 
+- [WA-42]: Deploy na Vercel com pagina "em breve" 
 
 ---
 
