@@ -10,6 +10,11 @@ npm run dev
 npm build 
 npm start
 ```
+## 📚 Confluence  
+Acesse o hub da empresa para identificar documentaçōes tecnicas do projeto [Hub no Confluence](https://alencar-consultorias.atlassian.net/wiki/company-hub)
+
+## 📋 Changelog
+Acesse o historico de versoes e seus detalhamentos das releases deste projeto: **[CHANGELOG.md](CHANGELOG.md)**
 
 ## 🚩 Contribuindo
 Consulte o arquivo [CONTRIBUTING.md](/docs-org/CONTRIBUTING.md) para instruções.
