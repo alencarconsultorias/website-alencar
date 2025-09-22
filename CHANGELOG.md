@@ -8,6 +8,10 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 ---
 
 ## [Unreleased] - YYYY-MM-DD
+### Adicionado 
+- Criado novo projeto para o website da Alencar 
+- Pagina de em breve online para os clientes
+
 ### Alterado 
 - [WA-42]: Deploy na Vercel com pagina "em breve" 
 

@@ -1,0 +1,83 @@
+import Image from "next/image"
+
+export function ApproachSection() {
+  return (
+    <section className="py-24 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 text-balance">Diga olá ao Alencar 10</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
+            Explore nossa 10ª geração de soluções que vem com design inovador, recursos úteis e nossa mais avançada
+            câmera Tensor G4.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          {/* Main Product Image */}
+          <div className="relative">
+            <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-12 shadow-2xl">
+              <div className="relative h-96 flex items-center justify-center">
+                <Image
+                  src="/images/alencar-icon.png"
+                  alt="Alencar 10"
+                  width={250}
+                  height={250}
+                  className="object-contain filter drop-shadow-2xl"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Product Variants */}
+          <div className="space-y-8">
+            <div className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 bg-golden-primary rounded-xl flex items-center justify-center">
+                  <Image
+                    src="/images/alencar-icon.png"
+                    alt="Alencar 10"
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-medium text-gray-900">Alencar 10</h3>
+                  <div className="flex items-center text-blue-600 text-sm">
+                    <span>Saiba mais</span>
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 bg-gray-300 rounded-xl flex items-center justify-center">
+                  <Image
+                    src="/images/alencar-icon.png"
+                    alt="Alencar 10 Pro Fold"
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-medium text-gray-900">Alencar 10 Pro Fold</h3>
+                  <div className="flex items-center text-blue-600 text-sm">
+                    <span>Saiba mais</span>
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
