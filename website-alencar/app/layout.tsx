@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description:
     "Líder em soluções tecnológicas para empresas. Consultoria especializada, desenvolvimento de software e transformação digital.",
   generator: "v0.app",
+  icons: {
+    icon: "/alencar-icon.png",
+    shortcut: "/alencar-icon.png",
+    apple: "/alencar-icon.png",
+  },
 }
 
 export default function RootLayout({
