@@ -7,13 +7,17 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ---
 
-## [Unreleased] - YYYY-MM-DD
+## [Unreleased] - 2025-09-26
 ### Adicionado 
 - Criado novo projeto para o website da Alencar 
 - Pagina de em breve online para os clientes
+- [WA-21]: Links das redes sociais no footer (WhatsApp, LinkedIn, Instagram)
+- [WA-21]: Ícones interativos das redes sociais com efeitos hover
 
 ### Alterado 
-- [WA-42]: Deploy na Vercel com pagina "em breve" 
+- [WA-42]: Deploy na Vercel com pagina "em breve"
+- [WA-21]: Atualizado número de telefone para +55 (11) 99567-6003
+- [WA-21]: Links das redes sociais atualizados com URLs oficiais da empresa 
 
 ---
 
