@@ -19,6 +19,13 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - [WA-21]: Atualizado número de telefone para +55 (11) 99567-6003
 - [WA-21]: Links das redes sociais atualizados com URLs oficiais da empresa 
 
+- [WA-39] Adicionado pagina de parceiros 
+- [WA-33] Atualizado as descriçōes e estrutura da pagina inicial
+
+
+### Alterado 
+- [WA-42] Deploy na Vercel com pagina "em breve" 
+
 ---
 
 ## Links úteis

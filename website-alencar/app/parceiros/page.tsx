@@ -1,0 +1,118 @@
+import Image from "next/image"
+import Link from "next/link"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+export const metadata = {
+  title: "Parceiros - Alencar Consultorias",
+  description: "Conheça os parceiros estratégicos da Alencar Consultorias.",
+}
+
+type Partner = {
+  name: string
+  description: string
+  logoSrc: string
+  site?: string
+  highlight?: boolean
+  about?: string
+  products?: string[]
+}
+
+const partners: Partner[] = [
+  {
+    name: "Control Mob",
+    description:
+      "Plataforma completa para gestão e automação de processos, parceira estratégica em modernização e produtividade.",
+    logoSrc: "/images/control-mob-logo.png",
+    site: "https://controlmob.com.br",
+    highlight: true,
+    about:
+      "A Control Mob é uma empresa de tecnologia focada em soluções de gestão, automação e produtividade para negócios que buscam escalar com eficiência e qualidade.",
+    products: [
+      "ERP e gestão integrada",
+      "Aplicativos móveis de operação",
+      "Automação de processos (BPM)",
+      "Painéis e relatórios de performance",
+    ],
+  },
+]
+
+export default function ParceirosPage() {
+  return (
+    <main className="min-h-screen">
+      <Header />
+
+      <section className="pt-28 pb-12 bg-gradient-to-b from-white to-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">Parceiros</h1>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Construímos resultados ao lado de um ecossistema de tecnologia de ponta. Conheça alguns dos parceiros com
+              quem a Alencar Consultorias trabalha.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {partners.map((partner) => (
+              <Card
+                key={partner.name}
+                className={partner.highlight ? "border-golden-primary/40 shadow-lg" : undefined}
+              >
+                <CardHeader>
+                  <div className="flex items-center gap-4">
+                    <div className="relative h-12 w-12 shrink-0 rounded bg-muted overflow-hidden">
+                      <Image src={partner.logoSrc} alt={partner.name} fill className="object-contain p-2" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-xl">{partner.name}</CardTitle>
+                      {partner.highlight && (
+                        <span className="inline-block mt-1 text-xs font-medium text-golden-primary">Parceiro destaque</span>
+                      )}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">{partner.description}</p>
+                  {partner.about && (
+                    <p className="mt-3 text-sm text-foreground/90">{partner.about}</p>
+                  )}
+                  {partner.products && partner.products.length > 0 && (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {partner.products.map((product) => (
+                        <span
+                          key={product}
+                          className="inline-flex items-center rounded-full border px-3 py-1 text-xs text-foreground/90 bg-background"
+                        >
+                          {product}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  {partner.site && (
+                    <Link
+                      href={partner.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex text-golden-primary hover:underline"
+                    >
+                      Visitar site
+                    </Link>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  )
+}
+
+

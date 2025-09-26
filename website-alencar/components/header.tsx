@@ -33,6 +33,9 @@ export function Header() {
             <a href="#sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Sobre
             </a>
+            <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+              Parceiros
+            </a>
             <a href="#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Contato
             </a>
@@ -57,6 +60,9 @@ export function Header() {
               </a>
               <a href="#sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Sobre
+              </a>
+              <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+                Parceiros
               </a>
               <a href="#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Contato
