@@ -44,6 +44,16 @@ export function Footer() {
                   Segurança Digital
                 </a>
               </li>
+              <li>
+                <a href="#" className="hover:text-golden-primary transition-colors">
+                  Vendas
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-golden-primary transition-colors">
+                  Suporte e Atendimento ao Cliente
+                </a>
+              </li>
             </ul>
           </div>
 

@@ -20,7 +20,9 @@ export function HeroSection() {
               muito mais.
             </p>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium">
-              Começar
+              <a href="#contato">
+                Comecar
+              </a>
             </Button>
           </div>
 
@@ -31,8 +33,8 @@ export function HeroSection() {
                 <Image
                   src="/images/alencar-icon.png"
                   alt="Alencar Technology"
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                   className="object-contain filter drop-shadow-2xl"
                 />
               </div>
