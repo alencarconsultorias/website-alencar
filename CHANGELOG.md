@@ -26,6 +26,13 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Menu dropdown que desaparecia ao tentar clicar nos itens
 - Navegação mobile com submenus indentados 
 
+- [WA-39] Adicionado pagina de parceiros 
+- [WA-33] Atualizado as descriçōes e estrutura da pagina inicial
+
+
+### Alterado 
+- [WA-42] Deploy na Vercel com pagina "em breve" 
+
 ---
 
 ## Links úteis

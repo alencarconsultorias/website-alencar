@@ -3,21 +3,33 @@ import { Card, CardContent } from "@/components/ui/card"
 export function ServicesSection() {
   const services = [
     {
-      title: "Explore nossos produtos e recursos",
-      description: "Conheça nossa plataforma de consultoria, Google Workspace e muito mais",
+      title: "Implantação de Software",
+      description: "Implementação completa de soluções de software personalizadas para sua empresa, garantindo integração perfeita com seus processos existentes",
       image: "/business-consulting-technology-workspace.jpg",
       link: "#",
     },
     {
-      title: "Saiba tudo sobre nossos modelos de IA",
-      description: "E descubra suas capacidades",
-      image: "/artificial-intelligence-neural-network-blue.jpg",
+      title: "Vendas de Software",
+      description: "Comercialização de soluções de software inovadoras, oferecendo as melhores tecnologias para impulsionar o crescimento do seu negócio",
+      image: "/professional-business-team-working-with-technology.jpg",
       link: "#",
     },
     {
-      title: "Veja como estamos resolvendo alguns dos",
-      description: "maiores desafios em ciência da computação",
+      title: "Suporte e Atendimento ao Cliente",
+      description: "Assistência técnica especializada e suporte contínuo para garantir o funcionamento otimizado de suas soluções de software",
+      image: "/business-handshake-partnership-professional-meetin.jpg",
+      link: "#",
+    },
+    {
+      title: "Desenvolvimento de Software",
+      description: "Criação de aplicações personalizadas e sistemas sob medida, desenvolvidos com as mais modernas tecnologias e metodologias ágeis",
       image: "/computer-science-innovation-technology.jpg",
+      link: "#",
+    },
+    {
+      title: "Fluxo Financeiro e Jurídico",
+      description: "Soluções especializadas em gestão financeira e compliance jurídico para empresas de software, garantindo conformidade e eficiência operacional",
+      image: "/modern-technology-innovation-digital-transformatio.jpg",
       link: "#",
     },
   ]
@@ -25,7 +37,7 @@ export function ServicesSection() {
   return (
     <section id="servicos" className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <Card
               key={index}
