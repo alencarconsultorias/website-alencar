@@ -12,6 +12,8 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Criado novo projeto para o website da Alencar 
 - Pagina de em breve online para os clientes
 - [WA-39] Adicionado pagina de parceiros 
+- [WA-33] Atualizado as descriçōes e estrutura da pagina inicial
+
 
 ### Alterado 
 - [WA-42] Deploy na Vercel com pagina "em breve" 

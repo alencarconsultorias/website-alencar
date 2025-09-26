@@ -5,10 +5,9 @@ export function ApproachSection() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 text-balance">Diga olá ao Alencar 10</h2>
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 text-balance">10 anos de experiência em tecnologia</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
-            Explore nossa 10ª geração de soluções que vem com design inovador, recursos úteis e nossa mais avançada
-            câmera Tensor G4.
+            Explore nossos servicos para adequar o seu modelo de negocio e melhorar o seu padrao de qualidade seja ele qual for!
           </p>
         </div>
 
@@ -42,7 +41,7 @@ export function ApproachSection() {
                   />
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-900">Alencar 10</h3>
+                  <h3 className="font-medium text-gray-900">Vendas</h3>
                   <div className="flex items-center text-blue-600 text-sm">
                     <span>Saiba mais</span>
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,7 +54,7 @@ export function ApproachSection() {
 
             <div className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow cursor-pointer">
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-gray-300 rounded-xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-golden-primary rounded-xl flex items-center justify-center">
                   <Image
                     src="/images/alencar-icon.png"
                     alt="Alencar 10 Pro Fold"
@@ -65,7 +64,7 @@ export function ApproachSection() {
                   />
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-900">Alencar 10 Pro Fold</h3>
+                  <h3 className="font-medium text-gray-900">Implantação</h3>
                   <div className="flex items-center text-blue-600 text-sm">
                     <span>Saiba mais</span>
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
