@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { MessageCircle, Linkedin, Instagram } from "lucide-react"
+import { Phone, Linkedin, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -53,7 +53,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-golden-primary">Contato</h3>
             <ul className="space-y-2 text-white/80">
               <li>contato@alencarconsultorias.com.br</li>
-              <li>+55 (11) 9999-9999</li>
+              <li>+55 (11) 99567-6003</li>
               <li>São Paulo, Brasil</li>
             </ul>
             
@@ -62,16 +62,16 @@ export function Footer() {
               <h4 className="text-sm font-semibold mb-3 text-golden-primary">Siga-nos</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5511995676003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
                   aria-label="WhatsApp"
                 >
-                  <MessageCircle size={20} />
+                  <Phone size={20} />
                 </a>
                 <a
-                  href="https://linkedin.com/company/alencar-consultorias"
+                  href="https://www.linkedin.com/company/alencar-consultorias/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
@@ -80,7 +80,7 @@ export function Footer() {
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="https://instagram.com/alencarconsultorias"
+                  href="https://www.instagram.com/alencarconsultorias/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
