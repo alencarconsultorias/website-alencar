@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { MessageCircle, Linkedin, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -55,6 +56,40 @@ export function Footer() {
               <li>+55 (11) 9999-9999</li>
               <li>São Paulo, Brasil</li>
             </ul>
+            
+            {/* Social Media Links */}
+            <div className="mt-6">
+              <h4 className="text-sm font-semibold mb-3 text-golden-primary">Siga-nos</h4>
+              <div className="flex space-x-4">
+                <a
+                  href="https://wa.me/5511999999999"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle size={20} />
+                </a>
+                <a
+                  href="https://linkedin.com/company/alencar-consultorias"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={20} />
+                </a>
+                <a
+                  href="https://instagram.com/alencarconsultorias"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={20} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
