@@ -13,13 +13,15 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Image
-              src="/images/alencar-logo.png"
-              alt="Alencar Consultorias"
-              width={200}
-              height={60}
-              className="h-12 w-auto"
-            />
+            <a href="/" className="cursor-pointer">
+              <Image
+                src="/images/alencar-logo.png"
+                alt="Alencar Consultorias"
+                width={200}
+                height={60}
+                className="h-12 w-auto hover:opacity-80 transition-opacity"
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -48,7 +50,7 @@ export function Header() {
                     <a href="#servicos-venda" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
                       Venda
                     </a>
-                    <a href="#servicos-desenvolvimento" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
+                    <a href="/servicos/desenvolvimento" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
                       Desenvolvimento de Software
                     </a>
                   </div>
@@ -91,7 +93,7 @@ export function Header() {
                   <a href="#servicos-venda" className="text-sm text-foreground/80 hover:text-golden-primary transition-colors">
                     Venda
                   </a>
-                  <a href="#servicos-desenvolvimento" className="text-sm text-foreground/80 hover:text-golden-primary transition-colors">
+                  <a href="/servicos/desenvolvimento" className="text-sm text-foreground/80 hover:text-golden-primary transition-colors">
                     Desenvolvimento de Software
                   </a>
                 </div>

@@ -7,13 +7,24 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ---
 
-## [Unreleased] - YYYY-MM-DD
+## [Unreleased] - 2025-09-26
 ### Adicionado 
 - Criado novo projeto para o website da Alencar 
 - Pagina de em breve online para os clientes
+- Submenus no header para serviços (Implantação, Suporte, Venda, Desenvolvimento)
+- Página completa de Desenvolvimento de Software (/servicos/desenvolvimento)
+- Seções: Hero, Tech Stack, Processo de Desenvolvimento, Tipos de Projetos
+- Animações suaves no dropdown do menu de serviços
 
 ### Alterado 
-- [WA-42]: Deploy na Vercel com pagina "em breve" 
+- [WA-42]: Deploy na Vercel com pagina "em breve"
+- Header com dropdown animado para submenu de serviços
+- Logo agora é clicável e retorna para página inicial
+- Removidos emojis da seção de processos de desenvolvimento
+
+### Corrigido
+- Menu dropdown que desaparecia ao tentar clicar nos itens
+- Navegação mobile com submenus indentados 
 
 ---
 
