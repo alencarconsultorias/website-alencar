@@ -36,6 +36,22 @@ const partners: Partner[] = [
       "Painéis e relatórios de performance",
     ],
   },
+  {
+    name: "Digital Contabilidade",
+    description:
+      "Especialistas em impostos e contabilidade, oferecendo auxílio fiscal para indivíduos e pequenas empresas com assessoria de ponta.",
+    logoSrc: "/images/digital-cont-logo.png",
+    site: "https://www.digitalcontsp.com.br",
+    highlight: false,
+    about:
+      "A Digital Contabilidade é especializada em fornecer assessoria fiscal de qualidade para clientes pessoais e corporativos, com profissionais especialistas em impostos e planejamento tributário.",
+    products: [
+      "Assessoria fiscal especializada",
+      "Planejamento de impostos",
+      "Contabilistas profissionais",
+      "Auxílio para declaração de IR",
+    ],
+  },
 ]
 
 export default function ParceirosPage() {
