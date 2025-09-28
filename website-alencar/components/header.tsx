@@ -26,9 +26,6 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-foreground hover:text-golden-primary transition-colors font-medium">
-              Início
-            </a>
             <div className="relative group">
               <a href="#servicos" className="text-foreground hover:text-golden-primary transition-colors font-medium inline-flex items-center py-2">
                 Serviços

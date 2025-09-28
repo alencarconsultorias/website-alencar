@@ -63,7 +63,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-golden-primary">Contato</h3>
             <ul className="space-y-2 text-white/80">
               <li>contato@alencarconsultorias.com.br</li>
-              <li>+55 (11) 99567-6003</li>
+              <li>+55 (11) 99999-9999</li>
               <li>São Paulo, Brasil</li>
             </ul>
             
@@ -72,7 +72,7 @@ export function Footer() {
               <h4 className="text-sm font-semibold mb-3 text-golden-primary">Siga-nos</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://wa.me/5511995676003"
+                  href="https://wa.me/551199999999" /* Em breve numero novo da Alencar*/
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
