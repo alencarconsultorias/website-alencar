@@ -3,10 +3,43 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { BreadcrumbSEO } from "@/components/breadcrumb-seo"
 
 export const metadata = {
-  title: "Parceiros - Alencar Consultorias",
-  description: "Conheça os parceiros estratégicos da Alencar Consultorias.",
+  title: "Parceiros Estratégicos",
+  description: "Conheça os parceiros estratégicos da Alencar Consultorias. Ecossistema de tecnologia de ponta com Control Mob, Digital Contabilidade e outros parceiros especializados.",
+  keywords: [
+    "parceiros estratégicos",
+    "ecossistema tecnológico",
+    "Control Mob",
+    "Digital Contabilidade",
+    "parcerias empresariais",
+    "soluções integradas",
+    "rede de parceiros",
+    "colaboração tecnológica"
+  ],
+  openGraph: {
+    title: "Parceiros Estratégicos | Alencar Consultorias",
+    description: "Construímos resultados ao lado de um ecossistema de tecnologia de ponta. Conheça nossos parceiros estratégicos e suas especialidades.",
+    url: "https://alencarconsultorias.com.br/parceiros",
+    images: [
+      {
+        url: "/og-parceiros.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Parceiros Estratégicos - Alencar Consultorias",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Parceiros Estratégicos | Alencar Consultorias",
+    description: "Ecossistema de tecnologia de ponta com parceiros especializados em soluções empresariais.",
+    images: ["/og-parceiros.jpg"],
+  },
+  alternates: {
+    canonical: "/parceiros",
+  },
 }
 
 type Partner = {
@@ -55,11 +88,16 @@ const partners: Partner[] = [
 ]
 
 export default function ParceirosPage() {
+  const breadcrumbItems = [
+    { name: "Parceiros" }
+  ]
+
   return (
     <main className="min-h-screen">
       <Header />
+      <BreadcrumbSEO items={breadcrumbItems} />
 
-      <section className="pt-28 pb-12 bg-gradient-to-b from-white to-muted/30">
+      <section className="pt-20 pb-12 bg-gradient-to-b from-white to-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">Parceiros</h1>
