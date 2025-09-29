@@ -35,6 +35,7 @@ export function HeroSection() {
                   alt="Alencar Technology"
                   width={300}
                   height={300}
+                  priority={true}
                   className="object-contain filter drop-shadow-2xl"
                 />
               </div>
