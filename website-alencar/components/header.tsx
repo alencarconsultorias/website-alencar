@@ -44,7 +44,7 @@ export function Header() {
                     <a href="#servicos-suporte" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
                       Suporte
                     </a>
-                    <a href="#servicos-venda" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
+                    <a href="/servicos/vendas" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
                       Venda
                     </a>
                     <a href="/servicos/desenvolvimento" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
