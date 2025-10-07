@@ -101,7 +101,7 @@ export function BeneficiosSacSection() {
               <CardContent className="p-0">
                 <div className={`${beneficio.bgColor} p-6 pb-4`}>
                   <div className={`inline-flex p-3 rounded-2xl bg-gradient-to-br ${beneficio.color} mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <beneficio.icon className="w-6 h-6 text-white" />
+                    <beneficio.icon className="w-6 h-6 text-golden-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     {beneficio.title}
@@ -113,8 +113,8 @@ export function BeneficiosSacSection() {
                     {beneficio.description}
                   </p>
                   
-                  <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${beneficio.color} text-white`}>
-                    <CheckCircle className="w-4 h-4 text-white" />
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-white text-golden-primary border border-golden-primary/30">
+                    <CheckCircle className="w-4 h-4 text-golden-primary" />
                     {beneficio.metrics}
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export function BeneficiosSacSection() {
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="inline-flex p-3 bg-gray-500 rounded-full mb-4">
-                    <Star className="w-6 h-6 text-white" />
+                    <Star className="w-6 h-6 text-golden-primary" />
                   </div>
                   <h4 className="text-xl font-semibold text-gray-800 mb-2">
                     Antes do SAC Estruturado
@@ -210,7 +210,7 @@ export function BeneficiosSacSection() {
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="inline-flex p-3 bg-golden-primary rounded-full mb-4">
-                    <CheckCircle className="w-6 h-6 text-white" />
+                    <CheckCircle className="w-6 h-6 text-golden-primary" />
                   </div>
                   <h4 className="text-xl font-semibold text-golden-primary mb-2">
                     Depois do SAC Alencar
