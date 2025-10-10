@@ -12,52 +12,18 @@ export function ImplantacaoHeroSection() {
   }
 
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <section className="pt-32 pb-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Implantação de
-            <span className="text-golden-primary"> Software</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transforme processos e garanta resultados com uma implantação eficiente e personalizada para o seu negócio. 
-            Suporte especializado durante toda a jornada.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-3 text-lg">
-              Solicitar uma Proposta
-            </Button>
-            <Button variant="outline" className="border-golden-primary text-golden-primary hover:bg-golden-primary hover:text-white px-8 py-3 text-lg">
-              Saiba Mais
-            </Button>
-          </div>
-        </div>
-        
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-golden-primary mb-2">98%</div>
-            <div className="text-gray-600">Taxa de Sucesso</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-golden-primary mb-2">15+</div>
-            <div className="text-gray-600">Anos de Experiência</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-golden-primary mb-2">200+</div>
-            <div className="text-gray-600">Projetos Entregues</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-golden-primary mb-2">24/7</div>
-            <div className="text-gray-600">Suporte</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                Implantação de
+                <span className="text-golden-primary"> Software</span>
+              </h1>
               
-              <p className="text-xl text-slate-600 leading-relaxed">
+              <p className="text-xl text-gray-700 leading-relaxed">
                 Transforme processos e garanta resultados com uma implantação eficiente e personalizada para o seu negócio.
               </p>
             </div>
@@ -71,7 +37,7 @@ export function ImplantacaoHeroSection() {
               ].map((point, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-slate-700">{point}</span>
+                  <span className="text-gray-800">{point}</span>
                 </div>
               ))}
             </div>
@@ -80,7 +46,7 @@ export function ImplantacaoHeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 text-lg"
+                className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-4 text-lg"
                 onClick={scrollToContact}
               >
                 Solicitar uma Proposta
@@ -90,7 +56,7 @@ export function ImplantacaoHeroSection() {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-slate-300 hover:border-blue-500 hover:text-blue-600 px-8 py-4 text-lg"
+                className="border-2 border-golden-primary text-golden-primary hover:bg-golden-primary hover:text-white px-8 py-4 text-lg"
                 onClick={() => {
                   const aboutSection = document.getElementById('about-implantacao')
                   if (aboutSection) {
@@ -105,8 +71,8 @@ export function ImplantacaoHeroSection() {
 
           {/* Visual */}
           <div className="relative">
-            <div className="relative bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 rounded-2xl" />
+            <div className="relative bg-gradient-to-br from-golden-primary to-golden-secondary rounded-2xl p-8 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-golden-primary/20 to-golden-secondary/20 rounded-2xl" />
               
               {/* Software Implementation Illustration */}
               <div className="relative space-y-6">
@@ -154,9 +120,29 @@ export function ImplantacaoHeroSection() {
               <CheckCircle className="w-6 h-6" />
             </div>
             
-            <div className="absolute -bottom-4 -left-4 bg-blue-600 text-white p-3 rounded-full shadow-lg">
+            <div className="absolute -bottom-4 -left-4 bg-golden-primary text-white p-3 rounded-full shadow-lg">
               <Settings className="w-6 h-6" />
             </div>
+          </div>
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-golden-primary mb-2">98%</div>
+            <div className="text-gray-600">Taxa de Sucesso</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-golden-primary mb-2">15+</div>
+            <div className="text-gray-600">Anos de Experiência</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-golden-primary mb-2">200+</div>
+            <div className="text-gray-600">Projetos Entregues</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-golden-primary mb-2">24/7</div>
+            <div className="text-gray-600">Suporte</div>
           </div>
         </div>
       </div>
