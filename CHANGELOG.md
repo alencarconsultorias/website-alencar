@@ -22,6 +22,8 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Comparativo "Antes vs Depois" da implantação
 - Oferta especial por tempo limitado com CTAs otimizados
 
+- [WA-46] Nova pagina para servicos de venda de software 
+
 ### Alterado 
 - [WA-42]: Deploy na Vercel com pagina "em breve"
 - Header com dropdown animado para submenu de serviços
