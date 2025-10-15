@@ -17,10 +17,10 @@ export function ApproachSection() {
             <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-12 shadow-2xl">
               <div className="relative h-96 flex items-center justify-center">
                 <Image
-                  src="/images/alencar-icon.png"
+                  src="/home/services/professional-business-team-working-with-technology.jpg"
                   alt="Alencar 10"
-                  width={250}
-                  height={250}
+                  width={1000}
+                  height={1000}
                   className="object-contain filter drop-shadow-2xl"
                 />
               </div>

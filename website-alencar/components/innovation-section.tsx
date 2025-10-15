@@ -20,7 +20,7 @@ export function InnovationSection() {
               className="border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-2 rounded-full bg-transparent"
             >
               <a href="#contato">
-                Confira
+                Saiba mais
               </a>
             </Button>
           </div>
@@ -29,7 +29,7 @@ export function InnovationSection() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/alencar-icon.png"
+                src="/home/ia.png"
                 alt="AI Innovation"
                 width={600}
                 height={400}
