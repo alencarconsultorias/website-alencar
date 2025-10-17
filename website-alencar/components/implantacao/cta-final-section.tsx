@@ -34,27 +34,26 @@ export function CtaFinalSection() {
   ]
 
   return (
-    <section id="cta-final" className="py-20 bg-gradient-to-br from-golden-primary via-golden-secondary to-golden-dark relative overflow-hidden">
+    <section id="cta-final" className="py-20 bg-gray-50 relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10" style={{
-        backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.3) 1px, transparent 0)`,
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.1) 1px, transparent 0)`,
         backgroundSize: '20px 20px'
       }} />
-      <div className="absolute inset-0 bg-gradient-to-br from-golden-primary/90 to-golden-dark/90" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center text-white mb-12">
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Star className="w-4 h-4" />
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <div className="inline-flex items-center gap-2 bg-golden-primary px-4 py-2 rounded-full text-sm font-medium mb-6 text-white">
+            <Star className="w-4 h-4 text-white" />
             Transformação Garantida
           </div>
           
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
             Pronto para transformar sua empresa com a 
-            <span className="block text-white">implantação certa?</span>
+            <span className="block text-golden-primary">implantação certa?</span>
           </h2>
           
-          <p className="text-xl text-white/80 leading-relaxed mb-8">
+          <p className="text-xl text-gray-700 leading-relaxed mb-8">
             Não deixe sua empresa ficar para trás. Comece hoje mesmo sua jornada de transformação 
             digital com quem entende do assunto.
           </p>
@@ -63,8 +62,8 @@ export function CtaFinalSection() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             {garantias.map((garantia, index) => (
               <div key={index} className="flex items-center gap-3 text-left">
-                <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
-                <span className="text-white/90">{garantia}</span>
+                <CheckCircle className="w-5 h-5 text-golden-primary flex-shrink-0" />
+                <span className="text-gray-800 font-medium">{garantia}</span>
               </div>
             ))}
           </div>
@@ -98,8 +97,8 @@ export function CtaFinalSection() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               
-              <div className="flex items-center justify-center gap-2 mt-4 text-sm text-gray-500">
-                <Clock className="w-4 h-4" />
+              <div className="flex items-center justify-center gap-2 mt-4 text-sm text-gray-600">
+                <Clock className="w-4 h-4 text-golden-primary" />
                 Resposta em até 30 minutos
               </div>
             </CardContent>
@@ -132,8 +131,8 @@ export function CtaFinalSection() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               
-              <div className="flex items-center justify-center gap-2 mt-4 text-sm text-gray-500">
-                <Clock className="w-4 h-4" />
+              <div className="flex items-center justify-center gap-2 mt-4 text-sm text-gray-600">
+                <Clock className="w-4 h-4 text-golden-primary" />
                 Proposta em até 24 horas
               </div>
             </CardContent>
@@ -194,16 +193,16 @@ export function CtaFinalSection() {
         </div>
 
         {/* Contact Info */}
-        <div className="text-center mt-12 text-white/80">
-          <p className="mb-4">Ou entre em contato pelos nossos canais:</p>
+        <div className="text-center mt-12">
+          <p className="mb-4 text-gray-700 font-medium">Ou entre em contato pelos nossos canais:</p>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <span>+55 11 99567-6003</span>
+            <div className="flex items-center gap-2 text-gray-800">
+              <Phone className="w-4 h-4 text-golden-primary" />
+              <span className="font-medium">+55 11 99567-6003</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Mail className="w-4 h-4" />
-              <span>contato@alencarconsultorias.com.br</span>
+            <div className="flex items-center gap-2 text-gray-800">
+              <Mail className="w-4 h-4 text-golden-primary" />
+              <span className="font-medium">contato@alencarconsultorias.com.br</span>
             </div>
           </div>
         </div>

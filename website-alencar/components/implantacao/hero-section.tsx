@@ -18,7 +18,7 @@ export function ImplantacaoHeroSection() {
   }
 
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <section className="pt-32 pb-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
