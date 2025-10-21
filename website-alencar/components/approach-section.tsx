@@ -29,15 +29,15 @@ export function ApproachSection() {
 
           {/* Product Variants */}
           <div className="space-y-8">
-            <div className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow cursor-pointer">
+            <a href="/servicos/vendas" className="block bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow cursor-pointer">
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-golden-primary rounded-xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center">
                   <Image
                     src="/images/alencar-icon.png"
                     alt="Alencar 10"
                     width={32}
                     height={32}
-                    className="object-contain"
+                    className="object-contain brightness-0 invert sepia saturate-[10000%] hue-rotate-[35deg]"
                   />
                 </div>
                 <div>
@@ -50,17 +50,17 @@ export function ApproachSection() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-            <div className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow cursor-pointer">
+            <a href="/servicos/implantacao" className="block bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow cursor-pointer">
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-golden-primary rounded-xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center">
                   <Image
                     src="/images/alencar-icon.png"
                     alt="Alencar 10 Pro Fold"
                     width={32}
                     height={32}
-                    className="object-contain"
+                    className="object-contain brightness-0 invert sepia saturate-[10000%] hue-rotate-[35deg]"
                   />
                 </div>
                 <div>
@@ -73,7 +73,7 @@ export function ApproachSection() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

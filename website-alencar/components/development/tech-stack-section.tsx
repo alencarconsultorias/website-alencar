@@ -6,66 +6,66 @@ export function TechStackSection() {
       title: "Frontend",
       description: "Interfaces modernas e responsivas",
       technologies: [
-        { name: "React", description: "Biblioteca JavaScript para UIs", icon: "⚛️" },
-        { name: "Next.js", description: "Framework React para produção", icon: "▲" },
-        { name: "TypeScript", description: "JavaScript com tipagem estática", icon: "🔷" },
-        { name: "Tailwind CSS", description: "Framework CSS utilitário", icon: "🎨" },
-        { name: "Vue.js", description: "Framework JavaScript progressivo", icon: "💚" },
+        { name: "React", description: "Biblioteca JavaScript para UIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Next.js", description: "Framework React para produção", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+        { name: "TypeScript", description: "JavaScript com tipagem estática", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { name: "Tailwind CSS", description: "Framework CSS utilitário", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
+        { name: "Vue.js", description: "Framework JavaScript progressivo", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
       ]
     },
     {
       title: "Backend",
       description: "APIs robustas e escaláveis",
       technologies: [
-        { name: "Node.js", description: "Runtime JavaScript no servidor", icon: "🟢" },
-        { name: "Python", description: "Linguagem versátil e poderosa", icon: "🐍" },
-        { name: "Java", description: "Linguagem enterprise robusta", icon: "☕" },
-        { name: "PHP", description: "Linguagem web consolidada", icon: "🐘" },
-        { name: "C#", description: "Linguagem Microsoft .NET", icon: "🔵" },
+        { name: "Node.js", description: "Runtime JavaScript no servidor", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+        { name: "Python", description: "Linguagem versátil e poderosa", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { name: "Java", description: "Linguagem enterprise robusta", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+        { name: "PHP", description: "Linguagem web consolidada", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+        { name: "C#", description: "Linguagem Microsoft .NET", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
       ]
     },
     {
       title: "Banco de Dados",
       description: "Armazenamento seguro e eficiente",
       technologies: [
-        { name: "PostgreSQL", description: "Banco relacional avançado", icon: "🐘" },
-        { name: "MySQL", description: "Banco relacional popular", icon: "🐬" },
-        { name: "MongoDB", description: "Banco NoSQL flexível", icon: "🍃" },
-        { name: "Firebase", description: "Plataforma Google completa", icon: "🔥" },
-        { name: "Redis", description: "Cache em memória rápido", icon: "🔴" },
+        { name: "PostgreSQL", description: "Banco relacional avançado", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+        { name: "MySQL", description: "Banco relacional popular", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { name: "MongoDB", description: "Banco NoSQL flexível", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+        { name: "Firebase", description: "Plataforma Google completa", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+        { name: "Redis", description: "Cache em memória rápido", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
       ]
     },
     {
       title: "Cloud & DevOps",
       description: "Infraestrutura moderna e automatizada",
       technologies: [
-        { name: "AWS", description: "Serviços cloud da Amazon", icon: "☁️" },
-        { name: "Docker", description: "Containerização de aplicações", icon: "🐳" },
-        { name: "Kubernetes", description: "Orquestração de containers", icon: "⚙️" },
-        { name: "Git", description: "Controle de versão distribuído", icon: "📝" },
-        { name: "GitHub Actions", description: "CI/CD automatizado", icon: "🚀" },
+        { name: "AWS", description: "Serviços cloud da Amazon", icon: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" },
+        { name: "Docker", description: "Containerização de aplicações", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+        { name: "Kubernetes", description: "Orquestração de containers", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+        { name: "Git", description: "Controle de versão distribuído", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+        { name: "GitHub Actions", description: "CI/CD automatizado", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
       ]
     },
     {
       title: "Mobile",
       description: "Apps nativos e híbridos",
       technologies: [
-        { name: "React Native", description: "Apps mobile multiplataforma", icon: "📱" },
-        { name: "Flutter", description: "Framework Google para mobile", icon: "💙" },
-        { name: "Swift", description: "Linguagem nativa iOS", icon: "🍎" },
-        { name: "Kotlin", description: "Linguagem moderna para Android", icon: "🤖" },
-        { name: "Ionic", description: "Framework híbrido web", icon: "⚡" },
+        { name: "React Native", description: "Apps mobile multiplataforma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Flutter", description: "Framework Google para mobile", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
+        { name: "Swift", description: "Linguagem nativa iOS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" },
+        { name: "Kotlin", description: "Linguagem moderna para Android", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" },
+        { name: "Ionic", description: "Framework híbrido web", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" },
       ]
     },
     {
       title: "Ferramentas",
       description: "Produtividade e qualidade",
       technologies: [
-        { name: "VS Code", description: "Editor de código moderno", icon: "💻" },
-        { name: "Figma", description: "Design e prototipação", icon: "🎨" },
-        { name: "Postman", description: "Teste de APIs", icon: "📮" },
-        { name: "Jest", description: "Framework de testes", icon: "🧪" },
-        { name: "ESLint", description: "Análise de código", icon: "🔍" },
+        { name: "VS Code", description: "Editor de código moderno", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+        { name: "Figma", description: "Design e prototipação", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        { name: "Postman", description: "Teste de APIs", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+        { name: "Jest", description: "Framework de testes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
+        { name: "ESLint", description: "Análise de código", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" },
       ]
     }
   ]
@@ -93,7 +93,13 @@ export function TechStackSection() {
                 <div className="space-y-4">
                   {category.technologies.map((tech, techIndex) => (
                     <div key={techIndex} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
-                      <span className="text-2xl">{tech.icon}</span>
+                      <div className="w-8 h-8 flex items-center justify-center">
+                        <img 
+                          src={tech.icon} 
+                          alt={tech.name}
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">{tech.name}</h4>
                         <p className="text-sm text-gray-600">{tech.description}</p>
