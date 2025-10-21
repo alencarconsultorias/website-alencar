@@ -153,20 +153,8 @@ export function BeneficiosSacSection() {
               </div>
             ))}
           </div>
-
-          {/* Testimonial */}
-          <div className="mt-12 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-            <div className="text-center">
-              <p className="text-lg italic text-gray-200 mb-4">
-                "Implementamos o SAC da Alencar e em 4 meses já vimos 40% de redução nos custos 
-                operacionais e 95% de satisfação dos clientes. Foi um investimento que se pagou rapidamente."
-              </p>
-              <div className="text-sm text-gray-400">
-                Diretora Comercial de empresa do setor de tecnologia
-              </div>
-            </div>
-          </div>
-        </div>
+          {/* Removed div clients depoiments*/}
+        </div> 
 
         {/* Comparativo Antes/Depois */}
         <div className="mt-16">

@@ -7,7 +7,7 @@ export function ApproachSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 text-balance">10 anos de experiência em tecnologia</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
-            Explore nossos servicos para adequar o seu modelo de negocio e melhorar o seu padrao de qualidade seja ele qual for!
+            Explore nossos serviços para adequar o seu modelo de negócio e melhorar o seu padrão de qualidade seja ele qual for!
           </p>
         </div>
 
