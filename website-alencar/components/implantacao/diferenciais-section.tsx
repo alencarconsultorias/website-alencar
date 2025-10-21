@@ -119,7 +119,7 @@ export function DiferenciaisSection() {
                   {item.highlights.map((highlight, idx) => (
                     <div key={idx} className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-golden-primary" />
-                      <span className="text-sm text-gray-700">{highlight}</span>
+                      <span className="text-sm text-gray-800 font-medium">{highlight}</span>
                     </div>
                   ))}
                 </div>
@@ -146,7 +146,7 @@ export function DiferenciaisSection() {
                     <div className="w-6 h-6 bg-golden-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                       <CheckCircle2 className="w-4 h-4 text-golden-primary" />
                     </div>
-                    <span className="text-gray-700">{beneficio}</span>
+                    <span className="text-gray-800 font-medium">{beneficio}</span>
                   </div>
                 ))}
               </div>

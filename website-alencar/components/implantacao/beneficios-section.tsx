@@ -109,12 +109,12 @@ export function BeneficiosSection() {
                 </div>
                 
                 <div className="p-6 pt-4">
-                  <p className="text-gray-600 leading-relaxed mb-4">
+                  <p className="text-gray-700 leading-relaxed mb-4">
                     {beneficio.description}
                   </p>
                   
                   <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${beneficio.color} text-white`}>
-                    <CheckCircle className="w-4 h-4" />
+                    <CheckCircle className="w-4 h-4 text-white" />
                     {beneficio.metrics}
                   </div>
                 </div>
@@ -198,7 +198,7 @@ export function BeneficiosSection() {
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-gray-500 rounded-full flex-shrink-0" />
-                      <span className="text-gray-700">{item}</span>
+                      <span className="text-gray-800">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -228,7 +228,7 @@ export function BeneficiosSection() {
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-golden-primary flex-shrink-0" />
-                      <span className="text-gray-700">{item}</span>
+                      <span className="text-gray-800">{item}</span>
                     </div>
                   ))}
                 </div>
