@@ -39,8 +39,8 @@ export function AboutImplantacaoSection() {
             que envolve planejamento detalhado, adaptação às necessidades específicas do negócio, treinamento 
             da equipe e acompanhamento contínuo para garantir o máximo retorno do investimento.
           </p>
-          <div className="bg-gradient-to-r from-golden-primary/10 to-golden-secondary/10 rounded-2xl p-8 border border-golden-primary/20">
-            <p className="text-gray-700 text-lg font-medium">
+          <div className="bg-white rounded-2xl p-8 border-2 border-golden-primary/30 shadow-lg">
+            <p className="text-gray-800 text-lg font-medium">
               "Uma implantação bem-sucedida não é apenas sobre tecnologia, 
               é sobre transformar a forma como sua empresa opera e cresce."
             </p>
