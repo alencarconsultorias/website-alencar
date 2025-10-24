@@ -16,13 +16,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Página completa de Desenvolvimento de Software (/servicos/desenvolvimento)
 - Seções: Hero, Tech Stack, Processo de Desenvolvimento, Tipos de Projetos
 - Animações suaves no dropdown do menu de serviços
-- [WA-44] Página completa de Implantação de Software (/servicos/implantacao)
-- Seções: Hero com CTA, Sobre Implantação, Diferenciais, Benefícios, CTA Final
-- Timeline do processo de implantação com 5 etapas detalhadas
-- Comparativo "Antes vs Depois" da implantação
-- Oferta especial por tempo limitado com CTAs otimizados
-
-- [WA-46] Nova pagina para servicos de venda de software 
+- [WA-46]: Nova pagina para servicos de venda de software 
 
 ### Alterado 
 - [WA-42]: Deploy na Vercel com pagina "em breve"
@@ -31,8 +25,9 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Removidos emojis da seção de processos de desenvolvimento
 - [WA-21]: Atualizado número de telefone para +55 (11) 99567-6003
 - [WA-21]: Links das redes sociais atualizados com URLs oficiais da empresa 
-- [WA-39] Adicionado pagina de parceiros 
-- [WA-33] Atualizado as descriçōes e estrutura da pagina inicial
+- [WA-39]: Adicionado pagina de parceiros 
+- [WA-33]: Atualizado as descriçōes e estrutura da pagina inicial
+- [WA-26]: Atualizado todos os textos, imagens, cores e focos em estile e estrategia de venda
 
 ### Corrigido
 - Menu dropdown que desaparecia ao tentar clicar nos itens

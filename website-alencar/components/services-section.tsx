@@ -1,36 +1,37 @@
 import { Card, CardContent } from "@/components/ui/card"
+import Link from "next/link"
 
 export function ServicesSection() {
   const services = [
     {
       title: "Implantação de Software",
       description: "Implementação completa de soluções de software personalizadas para sua empresa, garantindo integração perfeita com seus processos existentes",
-      image: "/business-consulting-technology-workspace.jpg",
+      image: "/home/services/business-consulting-technology-workspace.jpg",
       link: "/servicos/implantacao",
     },
     {
       title: "Vendas de Software",
       description: "Comercialização de soluções de software inovadoras, oferecendo as melhores tecnologias para impulsionar o crescimento do seu negócio",
-      image: "/professional-business-team-working-with-technology.jpg",
+      image: "/home/services/professional-business-team-working-with-technology.jpg",
       link: "/servicos/vendas",
     },
     {
       title: "Suporte e Atendimento ao Cliente",
       description: "Assistência técnica especializada e suporte contínuo para garantir o funcionamento otimizado de suas soluções de software",
-      image: "/business-handshake-partnership-professional-meetin.jpg",
-      link: "#",
+      image: "/home/services/business-handshake-partnership-professional-meetin.jpg",
+      link: "/servicos/suporte",
     },
     {
       title: "Desenvolvimento de Software",
       description: "Criação de aplicações personalizadas e sistemas sob medida, desenvolvidos com as mais modernas tecnologias e metodologias ágeis",
-      image: "/computer-science-innovation-technology.jpg",
+      image: "/home/services/computer-science-innovation-technology.jpg",
       link: "/servicos/desenvolvimento",
     },
     {
       title: "Fluxo Financeiro e Jurídico",
       description: "Soluções especializadas em gestão financeira e compliance jurídico para empresas de software, garantindo conformidade e eficiência operacional",
-      image: "/modern-technology-innovation-digital-transformatio.jpg",
-      link: "/servicos/financeiro-juridico",
+      image: "/home/services/modern-technology-innovation-digital-transformatio.jpg",
+      link: "#",
     },
   ]
 
@@ -39,9 +40,9 @@ export function ServicesSection() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <a key={index} href={service.link} className="block">
+            <Link href={service.link} key={index} className="group">
               <Card
-                className="border-0 shadow-none hover:shadow-lg transition-shadow duration-300 group cursor-pointer"
+                className="border-0 shadow-none hover:shadow-lg transition-shadow duration-300 cursor-pointer"
               >
                 <CardContent className="p-0">
                   <div className="aspect-video mb-6 rounded-lg overflow-hidden">
@@ -63,7 +64,7 @@ export function ServicesSection() {
                   </div>
                 </CardContent>
               </Card>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

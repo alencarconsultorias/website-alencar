@@ -7,7 +7,7 @@ export function ApproachSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 text-balance">10 anos de experiência em tecnologia</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
-            Explore nossos servicos para adequar o seu modelo de negocio e melhorar o seu padrao de qualidade seja ele qual for!
+            Explore nossos serviços para adequar o seu modelo de negócio e melhorar o seu padrão de qualidade seja ele qual for!
           </p>
         </div>
 
@@ -17,10 +17,10 @@ export function ApproachSection() {
             <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-12 shadow-2xl">
               <div className="relative h-96 flex items-center justify-center">
                 <Image
-                  src="/images/alencar-icon.png"
+                  src="/home/services/professional-business-team-working-with-technology.jpg"
                   alt="Alencar 10"
-                  width={250}
-                  height={250}
+                  width={1000}
+                  height={1000}
                   className="object-contain filter drop-shadow-2xl"
                 />
               </div>

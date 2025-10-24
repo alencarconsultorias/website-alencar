@@ -38,7 +38,7 @@ export function Header() {
               <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform translate-y-2 group-hover:translate-y-0">
                 <div className="min-w-[220px] rounded-md border border-golden-primary/20 bg-white shadow-lg backdrop-blur-sm">
                   <div className="py-2">
-                    <a href="/servicos/implantacao" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
+                    <a href="/not-found" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
                       Implantação
                     </a>
                     <a href="/servicos/suporte" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">

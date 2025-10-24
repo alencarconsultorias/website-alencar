@@ -16,12 +16,12 @@ export function HeroSection() {
               <span className="text-golden-primary font-medium"> transformar</span> seu negócio
             </h1>
             <p className="text-xl text-gray-600 max-w-lg text-pretty leading-relaxed">
-              Conheça os mais novos membros da família Alencar, incluindo consultoria em IA, transformação digital e
+              Conheça os mais novos serviços da família Alencar, incluindo consultoria em IA, transformação digital, desenvolvimento de software e
               muito mais.
             </p>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium">
               <a href="#contato">
-                Comecar
+                Saiba mais
               </a>
             </Button>
           </div>
@@ -31,7 +31,7 @@ export function HeroSection() {
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 shadow-2xl">
               <div className="relative h-96 flex items-center justify-center">
                 <Image
-                  src="/images/alencar-icon.png"
+                  src="/home/alencar-icon.png"
                   alt="Alencar Technology"
                   width={300}
                   height={300}

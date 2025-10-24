@@ -52,7 +52,7 @@ export function AboutSacSection() {
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
               <CardContent className="p-6 text-center">
                 <div className="mb-4 inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-golden-primary to-golden-secondary rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <feature.icon className="w-8 h-8 text-white" />
+                  <feature.icon className="w-8 h-8 text-golden-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {feature.title}
