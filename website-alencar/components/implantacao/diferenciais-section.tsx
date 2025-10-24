@@ -103,7 +103,7 @@ export function DiferenciaisSection() {
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-6">
                   <div className={`p-3 rounded-2xl bg-gradient-to-br ${item.color} group-hover:scale-110 transition-transform duration-300`}>
-                    <item.icon className="w-6 h-6 text-white" />
+                    <item.icon className="w-6 h-6 text-golden-primary" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -156,7 +156,7 @@ export function DiferenciaisSection() {
               <div className="bg-gradient-to-br from-golden-primary to-golden-secondary rounded-2xl p-8 text-white">
                 <div className="space-y-6">
                   <div className="text-center">
-                    <TrendingUp className="w-12 h-12 mx-auto mb-4 opacity-80" />
+                    <TrendingUp className="w-12 h-12 mx-auto mb-4 text-golden-primary opacity-80" />
                     <h4 className="text-xl font-semibold mb-2">Crescimento Garantido</h4>
                     <p className="opacity-90">
                       Empresas que implementam com nossa metodologia veem crescimento médio de 
@@ -178,11 +178,11 @@ export function DiferenciaisSection() {
               </div>
               
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 bg-golden-primary text-white p-3 rounded-full shadow-lg">
+              <div className="absolute -top-4 -right-4 bg-golden-primary text-golden-primary p-3 rounded-full shadow-lg">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
               
-              <div className="absolute -bottom-4 -left-4 bg-golden-secondary text-white p-3 rounded-full shadow-lg">
+              <div className="absolute -bottom-4 -left-4 bg-golden-secondary text-golden-primary p-3 rounded-full shadow-lg">
                 <Clock className="w-6 h-6" />
               </div>
             </div>

@@ -52,7 +52,7 @@ export function AboutImplantacaoSection() {
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
               <CardContent className="p-6 text-center">
                 <div className="mb-4 inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-golden-primary to-golden-secondary rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <feature.icon className="w-8 h-8 text-white" />
+                  <feature.icon className="w-8 h-8 text-golden-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {feature.title}
@@ -113,7 +113,7 @@ export function AboutImplantacaoSection() {
                     <Card className="border-0 shadow-lg">
                       <CardContent className="p-6">
                         <div className="flex items-center gap-4 mb-3">
-                          <div className="w-12 h-12 bg-gradient-to-br from-golden-primary to-golden-secondary rounded-full flex items-center justify-center text-white font-bold">
+                          <div className="w-12 h-12 bg-gradient-to-br from-golden-primary to-golden-secondary rounded-full flex items-center justify-center text-golden-primary font-bold">
                             {item.step}
                           </div>
                           <h4 className="text-xl font-semibold text-gray-900">

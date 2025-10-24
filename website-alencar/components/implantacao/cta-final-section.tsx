@@ -191,21 +191,6 @@ export function CtaFinalSection() {
             </div>
           </div>
         </div>
-
-        {/* Contact Info */}
-        <div className="text-center mt-12">
-          <p className="mb-4 text-gray-700 font-medium">Ou entre em contato pelos nossos canais:</p>
-          <div className="flex flex-wrap justify-center gap-6 text-sm">
-            <div className="flex items-center gap-2 text-gray-800">
-              <Phone className="w-4 h-4 text-golden-primary" />
-              <span className="font-medium">+55 11 99567-6003</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-800">
-              <Mail className="w-4 h-4 text-golden-primary" />
-              <span className="font-medium">contato@alencarconsultorias.com.br</span>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
