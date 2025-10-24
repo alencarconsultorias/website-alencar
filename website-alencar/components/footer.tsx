@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Phone, Linkedin, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -44,6 +45,16 @@ export function Footer() {
                   Segurança Digital
                 </a>
               </li>
+              <li>
+                <a href="#" className="hover:text-golden-primary transition-colors">
+                  Vendas
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-golden-primary transition-colors">
+                  Suporte e Atendimento ao Cliente
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -52,15 +63,49 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-golden-primary">Contato</h3>
             <ul className="space-y-2 text-white/80">
               <li>contato@alencarconsultorias.com.br</li>
-              <li>+55 (11) 9999-9999</li>
+              <li>+55 (11) 99999-9999</li>
               <li>São Paulo, Brasil</li>
             </ul>
+            
+            {/* Social Media Links */}
+            <div className="mt-6">
+              <h4 className="text-sm font-semibold mb-3 text-golden-primary">Siga-nos</h4>
+              <div className="flex space-x-4">
+                <a
+                  href="https://wa.me/551199999999" /* Em breve numero novo da Alencar*/
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
+                  aria-label="WhatsApp"
+                >
+                  <Phone size={20} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/alencar-consultorias/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={20} />
+                </a>
+                <a
+                  href="https://www.instagram.com/alencarconsultorias/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={20} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white/60 text-sm">© 2024 Alencar Consultorias. Todos os direitos reservados.</p>
+            <p className="text-white/60 text-sm">© 2025 Alencar Consultorias. Todos os direitos reservados.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-white/60 hover:text-golden-primary transition-colors text-sm">
                 Política de Privacidade
