@@ -9,6 +9,10 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Unreleased] - YYYY-MM-DD
 
+
+
+## [v1.0.0] - 2025-10-24
+
 ### Adicionado 
 - Criado novo projeto para o website da Alencar 
 - Pagina de em breve online para os clientes
