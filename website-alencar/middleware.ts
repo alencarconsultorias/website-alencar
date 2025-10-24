@@ -1,16 +1,14 @@
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-// This middleware rewrites all routes to /coming-soon when running on
-// the Vercel Production environment. Preview and Development are unaffected.
-// It also allows assets, Next.js internals, and specific files to pass through.
+// This middleware blocks access to /coming-soon in production
+// and allows normal routing for all other pages
 export function middleware(request: NextRequest) {
   const url = request.nextUrl
   const pathname = url.pathname
 
-  // Allowlist: paths that should never be rewritten
+  // Allowlist: paths that should never be blocked
   if (
-    pathname.startsWith('/coming-soon') ||
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
     pathname.startsWith('/images') || // public/images/*
@@ -28,10 +26,9 @@ export function middleware(request: NextRequest) {
     process.env.NEXT_PUBLIC_FORCE_COMING_SOON === 'true' ||
     process.env.FORCE_COMING_SOON === 'true'
 
-  if (isProduction || forceComingSoon) {
-    const rewriteUrl = url.clone()
-    rewriteUrl.pathname = '/coming-soon'
-    return NextResponse.rewrite(rewriteUrl)
+  // Block access to /coming-soon in production
+  if (pathname.startsWith('/coming-soon') && (isProduction || forceComingSoon)) {
+    return NextResponse.redirect(new URL('/', url))
   }
 
   return NextResponse.next()
@@ -40,7 +37,7 @@ export function middleware(request: NextRequest) {
 // Limit middleware to all routes except common static/internal ones.
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|coming-soon|images).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|images).*)',
   ],
 }
 
