@@ -24,7 +24,7 @@ const partners: Partner[] = [
     name: "Control Mob",
     description:
       "Plataforma completa para gestão e automação de processos, parceira estratégica em modernização e produtividade.",
-    logoSrc: "/images/control-mob-logo.png",
+    logoSrc: "/partners/control-mob-logo.png",
     site: "https://controlmob.com.br",
     highlight: true,
     about:
@@ -40,7 +40,7 @@ const partners: Partner[] = [
     name: "Digital Contabilidade",
     description:
       "Especialistas em impostos e contabilidade, oferecendo auxílio fiscal para indivíduos e pequenas empresas com assessoria de ponta.",
-    logoSrc: "/images/digital-cont-logo.png",
+    logoSrc: "/partners/digital-cont-logo.jpeg",
     site: "https://www.digitalcontsp.com.br",
     highlight: false,
     about:
