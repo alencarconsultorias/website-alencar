@@ -21,7 +21,8 @@ export function ContactSection() {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Fale conosco</h3>
               <p className="text-muted-foreground mb-8 text-pretty">
-                Você é uma empresa ou empreendedor buscando soluções tecnológicas inovadoras? Estamos aqui para ajudar.
+                Você é uma empresa ou empreendedor buscando soluções tecnológicas inovadoras? <br></br> 
+                Estamos aqui para ajudar.
                 Vamos construir algo incrível juntos.
               </p>
             </div>
@@ -33,7 +34,13 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">contato@alencarconsultorias.com.br</p>
+                  <a
+                    href="mailto:contato@alencarconsultorias.com.br"
+                    className="text-muted-foreground hover:underline"
+                    aria-label="Enviar email para contato@alencarconsultorias.com.br"
+                  >
+                    contato@alencarconsultorias.com.br
+                  </a>
                 </div>
               </div>
 

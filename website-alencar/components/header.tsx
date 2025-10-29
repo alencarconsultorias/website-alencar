@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -60,10 +61,12 @@ export function Header() {
             <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Parceiros
             </a>
-            <a href="#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+            <a href="/contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Contato
             </a>
-            <Button className="bg-golden-primary hover:bg-golden-secondary text-white">Fale Conosco</Button>
+            <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white">
+              <Link href="/contato">Fale Conosco</Link>
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -104,10 +107,12 @@ export function Header() {
               <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Parceiros
               </a>
-              <a href="#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+              <a href="/contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Contato
               </a>
-              <Button className="bg-golden-primary hover:bg-golden-secondary text-white w-fit">Fale Conosco</Button>
+              <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white w-fit">
+                <Link href="/contato">Fale Conosco</Link>
+              </Button>
             </div>
           </nav>
         )}
