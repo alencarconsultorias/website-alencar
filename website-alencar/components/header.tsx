@@ -50,6 +50,9 @@ export function Header() {
                     <a href="/servicos/desenvolvimento" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
                       Desenvolvimento de Software
                     </a>
+                    <a href="/servicos/automacao" className="block px-4 py-3 text-sm text-foreground hover:bg-golden-primary/10 hover:text-golden-primary transition-all duration-200 transform hover:translate-x-1">
+                      Automação Residencial e Comercial 
+                    </a>
                   </div>
                 </div>
               </div>
