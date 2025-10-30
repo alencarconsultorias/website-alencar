@@ -8,7 +8,8 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 ---
 
 ## [Unreleased] - YYYY-MM-DD
-
+### Adicionado 
+- [WA-47] Criado pagina para novo servico de automacao residencial e comercial 
 
 
 ## [v1.0.0] - 2025-10-24
