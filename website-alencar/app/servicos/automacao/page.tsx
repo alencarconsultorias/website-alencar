@@ -21,7 +21,7 @@ export default function AutomacaoCamerasPage() {
       <DescricaoSection />
       <ServicosSection />
       <DiferenciaisSection />
-      <DepoimentoSection />
+      {/* <DepoimentoSection /> */}
       <GaleriaSection />
       <ContactSection />
       <Footer />
