@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -54,13 +55,13 @@ export function Header() {
                 </div>
               </div>
             </div>
-            <a href="#sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+            <a href="/sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Sobre
             </a>
             <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Parceiros
             </a>
-            <a href="/#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+            <a href="/contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Contato
             </a>
             <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white"><a href="/#contato">Fale Conosco</a></Button>
@@ -98,13 +99,13 @@ export function Header() {
                   </a>
                 </div>
               </div>
-              <a href="#sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+              <a href="/sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Sobre
               </a>
               <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Parceiros
               </a>
-              <a href="/#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+              <a href="/contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Contato
               </a>
               <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white w-fit"><a href="/#contato">Fale Conosco</a></Button>
