@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function ImplantacaoHeroSection() {
   const scrollToContact = () => {
@@ -31,10 +32,10 @@ export function ImplantacaoHeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
+              asChild
               className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-3 text-lg"
-              onClick={scrollToContact}
             >
-              Solicitar uma Proposta
+              <Link href="/#contato">Solicitar uma Proposta</Link>
             </Button>
             <Button 
               variant="outline" 

@@ -1,10 +1,67 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin } from "lucide-react"
+import { useState } from "react"
+import { toast } from "sonner"
 
 export function ContactSection() {
+  const [loading, setLoading] = useState(false)
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    if (loading) return
+    setLoading(true)
+
+    try {
+      const formEl = e.currentTarget
+      const data = new FormData(formEl)
+      const payload = {
+        firstName: String(data.get("firstName") || ""),
+        lastName: String(data.get("lastName") || ""),
+        email: String(data.get("email") || ""),
+        company: String(data.get("company") || ""),
+        message: String(data.get("message") || ""),
+      }
+
+      // Web3Forms implementation
+      if (!process.env.NEXT_PUBLIC_WEB3FORMS_KEY) {
+        throw new Error("Configuração de envio ausente. Defina NEXT_PUBLIC_WEB3FORMS_KEY.")
+      }
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          subject: "Novo contato pelo site",
+          from_name: `${payload.firstName} ${payload.lastName}`.trim(),
+          from_email: payload.email,
+          company: payload.company,
+          message: payload.message,
+        }),
+      })
+      const json = await res.json()
+      if (!res.ok || json.success !== true) {
+        throw new Error(json?.message || "Falha no envio pelo Web3Forms")
+      }
+
+      toast.success("Mensagem enviada com sucesso! Em breve entraremos em contato.")
+      formEl.reset()
+    } catch (err: any) {
+      toast.error(
+        typeof err?.message === "string"
+          ? `Não foi possível enviar sua mensagem: ${err.message}`
+          : "Não foi possível enviar sua mensagem. Tente novamente."
+      )
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <section id="contato" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -70,39 +127,40 @@ export function ContactSection() {
           <Card className="border-golden-primary/20">
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-6">Pronto para começar?</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={onSubmit}>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium mb-2 block">Nome</label>
-                    <Input placeholder="Seu nome" />
+                    <Input name="firstName" placeholder="Seu nome" required />
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Sobrenome</label>
-                    <Input placeholder="Seu sobrenome" />
+                    <Input name="lastName" placeholder="Seu sobrenome" required />
                   </div>
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">Email</label>
-                  <Input type="email" placeholder="seu@email.com" />
+                  <Input name="email" type="email" placeholder="seu@email.com" required />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">Empresa</label>
-                  <Input placeholder="Nome da sua empresa" />
+                  <Input name="company" placeholder="Nome da sua empresa" />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">Mensagem</label>
-                  <Textarea placeholder="Conte-nos sobre seu projeto..." rows={4} />
+                  <Textarea name="message" placeholder="Conte-nos sobre seu projeto..." rows={4} required />
                 </div>
 
                 <Button
                   type="submit"
                   className="w-full bg-golden-primary hover:bg-golden-secondary text-white"
+                  disabled={loading}
                   size="lg"
                 >
-                  Enviar Mensagem
+                  {loading ? "Enviando..." : "Enviar Mensagem"}
                 </Button>
               </form>
             </CardContent>

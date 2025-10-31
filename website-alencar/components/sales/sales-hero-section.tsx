@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function SalesHeroSection() {
   return (
@@ -14,11 +15,9 @@ export function SalesHeroSection() {
             implantação e sucesso do cliente — para você adquirir o software certo, com resultados reais.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#contato">
-              <Button className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-3 text-lg">
-                Solicitar uma Consultoria
-              </Button>
-            </a>
+            <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-3 text-lg">
+              <Link href="/#contato">Solicitar uma Consultoria</Link>
+            </Button>
           </div>
         </div>
       </div>

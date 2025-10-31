@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import Image from "next/image"
 
 export function InnovationSection() {
@@ -16,12 +17,11 @@ export function InnovationSection() {
               A Alencar está adicionando IA a mais pessoas, e isso vai tornar a consultoria mais útil para todos.
             </p>
             <Button
+              asChild
               variant="outline"
               className="border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-2 rounded-full bg-transparent"
             >
-              <a href="#contato">
-                Saiba mais
-              </a>
+              <Link href="/#contato">Saiba mais</Link>
             </Button>
           </div>
 

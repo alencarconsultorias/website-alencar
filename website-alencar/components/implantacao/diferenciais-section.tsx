@@ -153,7 +153,7 @@ export function DiferenciaisSection() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-golden-primary to-golden-secondary rounded-2xl p-8 text-white">
+              <div className="bg-gradient-to-br from-golden-primary to-golden-secondary rounded-2xl p-8 text-black">
                 <div className="space-y-6">
                   <div className="text-center">
                     <TrendingUp className="w-12 h-12 mx-auto mb-4 text-golden-primary opacity-80" />
@@ -164,14 +164,14 @@ export function DiferenciaisSection() {
                     </p>
                   </div>
                   
-                  <div className="border-t border-white/20 pt-6">
+                  <div className="border-t border-black/20 pt-6">
                     <div className="flex items-center justify-between text-sm">
                       <span className="opacity-80">Tempo médio de ROI</span>
-                      <span className="font-semibold">4-6 meses</span>
+                      <span className="font-semibold text-black">4-6 meses</span>
                     </div>
                     <div className="flex items-center justify-between text-sm mt-2">
                       <span className="opacity-80">Satisfação do cliente</span>
-                      <span className="font-semibold">98%</span>
+                      <span className="font-semibold text-black">98%</span>
                     </div>
                   </div>
                 </div>
