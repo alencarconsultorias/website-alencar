@@ -3,7 +3,9 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
+import { Toaster } from "sonner"
 import { Suspense } from "react"
+import { ScrollToTop } from "@/components/scroll-to-top"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -27,7 +29,9 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
+        <ScrollToTop />
         <Analytics />
+        <Toaster richColors position="top-center" />
       </body>
     </html>
   )
