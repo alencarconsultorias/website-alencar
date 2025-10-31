@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function ProjectTypesSection() {
   const projectTypes = [
@@ -148,8 +149,8 @@ export function ProjectTypesSection() {
                   </div>
                 </div>
                 
-                <Button className="w-full bg-golden-primary hover:bg-golden-secondary text-white">
-                  Solicitar Orçamento
+                <Button asChild className="w-full bg-golden-primary hover:bg-golden-secondary text-white">
+                  <Link href="/#contato">Solicitar Orçamento</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -184,11 +185,11 @@ export function ProjectTypesSection() {
             Conheça alguns dos projetos que desenvolvemos e os resultados alcançados.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-golden-primary hover:bg-gray-100 px-8 py-3">
-              Ver Portfólio
+            <Button asChild className="bg-white text-golden-primary hover:bg-gray-100 px-8 py-3">
+              <Link href="/#contato">Ver Portfólio</Link>
             </Button>
-            <Button variant="outline" className="border-black text-black hover:bg-black hover:text-white px-8 py-3">
-              Agendar Reunião
+            <Button asChild variant="outline" className="border-black text-black hover:bg-black hover:text-white px-8 py-3">
+              <Link href="/#contato">Agendar Reunião</Link>
             </Button>
           </div>
         </div>

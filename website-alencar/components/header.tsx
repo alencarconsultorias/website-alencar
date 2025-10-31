@@ -60,10 +60,10 @@ export function Header() {
             <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Parceiros
             </a>
-            <a href="#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+            <a href="/#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Contato
             </a>
-            <Button className="bg-golden-primary hover:bg-golden-secondary text-white">Fale Conosco</Button>
+            <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white"><a href="/#contato">Fale Conosco</a></Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -104,10 +104,10 @@ export function Header() {
               <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Parceiros
               </a>
-              <a href="#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+              <a href="/#contato" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Contato
               </a>
-              <Button className="bg-golden-primary hover:bg-golden-secondary text-white w-fit">Fale Conosco</Button>
+              <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white w-fit"><a href="/#contato">Fale Conosco</a></Button>
             </div>
           </nav>
         )}
