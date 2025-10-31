@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin } from "lucide-react"
 import { useState } from "react"
-import emailjs from "@emailjs/browser"
 import { toast } from "sonner"
 
 export function ContactSection() {
@@ -28,33 +27,26 @@ export function ContactSection() {
         message: String(data.get("message") || ""),
       }
 
-      // Prefer EmailJS if envs exist
-      const svc = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
-      const tmpl = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
-      const pub = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      // Web3Forms implementation
+      if (!process.env.NEXT_PUBLIC_WEB3FORMS_KEY) {
+        throw new Error("Configuração de envio ausente. Defina NEXT_PUBLIC_WEB3FORMS_KEY.")
+      }
 
-      if (svc && tmpl && pub) {
-        await emailjs.send(svc, tmpl, payload, { publicKey: pub })
-      } else if (process.env.NEXT_PUBLIC_WEB3FORMS_KEY) {
-        // Fallback to Web3Forms
-        const res = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
-            subject: "Novo contato pelo site",
-            from_name: `${payload.firstName} ${payload.lastName}`.trim(),
-            from_email: payload.email,
-            company: payload.company,
-            message: payload.message,
-          }),
-        })
-        const json = await res.json()
-        if (!res.ok || json.success !== true) {
-          throw new Error(json?.message || "Falha no envio pelo Web3Forms")
-        }
-      } else {
-        throw new Error("Configuração de envio ausente. Defina EmailJS ou WEB3FORMS.")
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          subject: "Novo contato pelo site",
+          from_name: `${payload.firstName} ${payload.lastName}`.trim(),
+          from_email: payload.email,
+          company: payload.company,
+          message: payload.message,
+        }),
+      })
+      const json = await res.json()
+      if (!res.ok || json.success !== true) {
+        throw new Error(json?.message || "Falha no envio pelo Web3Forms")
       }
 
       toast.success("Mensagem enviada com sucesso! Em breve entraremos em contato.")
