@@ -176,7 +176,7 @@ export function ProjectTypesSection() {
         </div>
 
         {/* Portfolio CTA */}
-        <div className="bg-gradient-to-r from-golden-primary to-golden-secondary rounded-2xl p-8 text-center text-white max-w-4xl mx-auto">
+        <div className="bg-gradient-to-r from-golden-primary to-golden-secondary rounded-2xl p-8 text-center text-black max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold mb-4">
             Veja nossos projetos em ação
           </h3>
@@ -187,7 +187,7 @@ export function ProjectTypesSection() {
             <Button className="bg-white text-golden-primary hover:bg-gray-100 px-8 py-3">
               Ver Portfólio
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-golden-primary px-8 py-3">
+            <Button variant="outline" className="border-black text-black hover:bg-black hover:text-white px-8 py-3">
               Agendar Reunião
             </Button>
           </div>
