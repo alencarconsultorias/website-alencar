@@ -26,34 +26,36 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-golden-primary">Serviços</h3>
             <ul className="space-y-2 text-white/80">
               <li>
-                <a href="#" className="hover:text-golden-primary transition-colors">
-                  Consultoria Estratégica
+                <a href="/servicos/implantacao" className="hover:text-golden-primary transition-colors">
+                  Implantação de Software
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-golden-primary transition-colors">
-                  Desenvolvimento
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-golden-primary transition-colors">
-                  Infraestrutura
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-golden-primary transition-colors">
-                  Segurança Digital
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-golden-primary transition-colors">
-                  Vendas
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-golden-primary transition-colors">
+                <a href="/servicos/suporte" className="hover:text-golden-primary transition-colors">
                   Suporte e Atendimento ao Cliente
                 </a>
+              </li>
+              <li>
+                <a href="/servicos/vendas" className="hover:text-golden-primary transition-colors">
+                  Vendas de Software
+                </a>
+              </li>
+              <li>
+                <a href="/servicos/desenvolvimento" className="hover:text-golden-primary transition-colors">
+                  Desenvolvimento de Software
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <a href="/" className="hover:text-golden-primary transition-colors">
+                  Estratégica Financeira e Jurídica
+                </a>
+                <span className="text-xs bg-golden-primary text-white px-2 py-0.5 rounded">Em breve</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <a href="/" className="hover:text-golden-primary transition-colors">
+                  Segurança Residencial e Comercial
+                </a>
+                <span className="text-xs bg-golden-primary text-white px-2 py-0.5 rounded">Em breve</span>
               </li>
             </ul>
           </div>
@@ -62,8 +64,12 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-golden-primary">Contato</h3>
             <ul className="space-y-2 text-white/80">
-              <li>contato@alencarconsultorias.com.br</li>
-              <li>+55 (11) 99999-9999</li>
+              <li>
+                <a href="mailto:contato@alencarconsultorias.com.br" className="hover:text-golden-primary transition-colors">
+                  contato@alencarconsultorias.com.br
+                </a>
+              </li>
+              {/* <li>+55 (11) 99999-9999</li> */}
               <li>São Paulo, Brasil</li>
             </ul>
             
@@ -107,10 +113,10 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">© 2025 Alencar Consultorias. Todos os direitos reservados.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-white/60 hover:text-golden-primary transition-colors text-sm">
+              <a href="/politica-de-privacidade" className="text-white/60 hover:text-golden-primary transition-colors text-sm">
                 Política de Privacidade
               </a>
-              <a href="#" className="text-white/60 hover:text-golden-primary transition-colors text-sm">
+              <a href="/termos-de-uso" className="text-white/60 hover:text-golden-primary transition-colors text-sm">
                 Termos de Uso
               </a>
             </div>
