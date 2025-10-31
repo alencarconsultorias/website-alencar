@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [],
+    domains: ['static.wixstatic.com'],
     formats: ['image/webp', 'image/avif'],
   },
 }
