@@ -54,7 +54,7 @@ export function Header() {
                 </div>
               </div>
             </div>
-            <a href="#sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+            <a href="/sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
               Sobre
             </a>
             <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
@@ -98,7 +98,7 @@ export function Header() {
                   </a>
                 </div>
               </div>
-              <a href="#sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
+              <a href="/sobre" className="text-foreground hover:text-golden-primary transition-colors font-medium">
                 Sobre
               </a>
               <a href="/parceiros" className="text-foreground hover:text-golden-primary transition-colors font-medium">
