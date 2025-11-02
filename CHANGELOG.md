@@ -11,10 +11,17 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ### Adicionado 
 - [WA-47] Criado pagina para novo servico de automacao residencial e comercial 
-
-
-### Adicionado 
 - [WA-53] Pagina de contato e links do cabecalho
+- [WA-49] Paginas com links no rodapé para Termos de Uso e Politica de Privacidade 
+- [WA-50] Botão em todas as páginas para voltar ao topo
+- [WA-53] Pagina de contatos 
+- [WA-54] Pagina Sobre Nos
+
+### Corrigido 
+- [WA-48] Botão para enviar notificação ao cliente por e-mail
+- [WA-49] Hiperlinks do rodapé
+- [WA-51] Letras transparentes na pagina de Implantação 
+- [WA-52] Letras transparentes na pagina de Desenvolvimento
 
 
 ## [v1.0.0] - 2025-10-24
