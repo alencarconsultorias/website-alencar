@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function DevelopmentHeroSection() {
   return (
@@ -14,11 +15,11 @@ export function DevelopmentHeroSection() {
             Do conceito à implementação, transformamos suas ideias em produtos digitais de alta qualidade.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-3 text-lg">
-              Solicitar Orçamento
+            <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-3 text-lg">
+              <Link href="/#contato">Solicitar Orçamento</Link>
             </Button>
-            <Button variant="outline" className="border-golden-primary text-golden-primary hover:bg-golden-primary hover:text-white px-8 py-3 text-lg">
-              Ver Portfólio
+            <Button asChild variant="outline" className="border-golden-primary text-golden-primary hover:bg-golden-primary hover:text-white px-8 py-3 text-lg">
+              <Link href="/#contato">Ver Portfólio</Link>
             </Button>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function SalesFinalCtaSection() {
   return (
@@ -10,11 +11,9 @@ export function SalesFinalCtaSection() {
             Fale com um consultor comercial e receba uma recomendação personalizada com base nas suas metas e
             processos.
           </p>
-          <a href="#contato">
-            <Button className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-3 text-lg">
-              Fale com um Consultor Comercial
-            </Button>
-          </a>
+          <Button asChild className="bg-golden-primary hover:bg-golden-secondary text-white px-8 py-3 text-lg">
+            <Link href="/#contato">Fale com um Consultor Comercial</Link>
+          </Button>
         </div>
       </div>
     </section>

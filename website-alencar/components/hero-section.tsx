@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import Image from "next/image"
 
 export function HeroSection() {
@@ -19,10 +20,8 @@ export function HeroSection() {
               Conheça os mais novos serviços da família Alencar, incluindo consultoria em IA, transformação digital, desenvolvimento de software e
               muito mais.
             </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium">
-              <a href="#contato">
-                Saiba mais
-              </a>
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium">
+              <Link href="/#contato">Saiba mais</Link>
             </Button>
           </div>
 

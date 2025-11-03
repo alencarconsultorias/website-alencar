@@ -1,6 +1,6 @@
 {
-  "name": "webiste alencar",
-  "version": "0.3.0",
+  "name": "Website Alencar",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
