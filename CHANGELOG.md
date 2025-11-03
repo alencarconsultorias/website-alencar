@@ -9,6 +9,8 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Unreleased] - YYYY-MM-DD
 
+## [v1.1.0] - 2025-11-03
+
 ### Adicionado 
 - [WA-47] Criado pagina para novo servico de automacao residencial e comercial 
 - [WA-53] Pagina de contato e links do cabecalho
