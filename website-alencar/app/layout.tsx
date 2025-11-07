@@ -5,11 +5,8 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Toaster } from "sonner"
 import { Suspense } from "react"
-<<<<<<< HEAD
 import { ScrollToTop } from "@/components/scroll-to-top"
-=======
 import { StructuredData } from "@/components/structured-data"
->>>>>>> e82c8c2 (feat(WA-22):SEO-Configs)
 import "./globals.css"
 
 export const metadata: Metadata = {
