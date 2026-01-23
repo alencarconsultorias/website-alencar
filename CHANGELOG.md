@@ -18,6 +18,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - [WA-50] Botão em todas as páginas para voltar ao topo
 - [WA-53] Pagina de contatos 
 - [WA-54] Pagina Sobre Nos
+- [WA-56] Versão do projeto no radapé 
 
 ### Corrigido 
 - [WA-48] Botão para enviar notificação ao cliente por e-mail

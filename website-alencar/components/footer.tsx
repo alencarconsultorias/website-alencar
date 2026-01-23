@@ -111,7 +111,10 @@ export function Footer() {
 
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white/60 text-sm">© 2025 Alencar Consultorias. Todos os direitos reservados.</p>
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+              <p className="text-white/60 text-sm">© 2025 Alencar Consultorias. Todos os direitos reservados.</p>
+              <span className="text-white/40 text-xs">v1.1.0</span>
+            </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="/politica-de-privacidade" className="text-white/60 hover:text-golden-primary transition-colors text-sm">
                 Política de Privacidade
