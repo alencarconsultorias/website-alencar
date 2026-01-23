@@ -43,7 +43,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Página completa de Desenvolvimento de Software (/servicos/desenvolvimento)
 - Seções: Hero, Tech Stack, Processo de Desenvolvimento, Tipos de Projetos
 - Animações suaves no dropdown do menu de serviços
-<<<<<<< HEAD
+
 - [WA-46]: Nova pagina para servicos de venda de software 
 =======
 
