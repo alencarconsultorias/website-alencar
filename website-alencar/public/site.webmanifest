@@ -1,0 +1,21 @@
+{
+  "name": "Alencar Consultorias - Transformação Digital",
+  "short_name": "Alencar Consultorias",
+  "description": "Líder em soluções tecnológicas para empresas. Consultoria especializada, desenvolvimento de software e transformação digital.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "/alencar-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/alencar-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
