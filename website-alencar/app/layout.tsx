@@ -7,6 +7,7 @@ import { Toaster } from "sonner"
 import { Suspense } from "react"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { StructuredData } from "@/components/structured-data"
+import { CookieBanner } from "@/components/cookie-banner"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   description: "Líder em soluções tecnológicas para empresas. Consultoria especializada, desenvolvimento de software e transformação digital. Impulsione seu negócio com nossas soluções inovadoras.",
   keywords: [
     "consultoria tecnológica",
-    "transformação digital", 
+    "transformação digital",
     "desenvolvimento de software",
     "soluções empresariais",
     "tecnologia",
@@ -97,6 +98,7 @@ export default function RootLayout({
         <ScrollToTop />
         <Analytics />
         <Toaster richColors position="top-center" />
+        <CookieBanner />
       </body>
     </html>
   )
