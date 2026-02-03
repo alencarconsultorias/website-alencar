@@ -18,7 +18,6 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - [WA-50] Botão em todas as páginas para voltar ao topo
 - [WA-53] Pagina de contatos 
 - [WA-54] Pagina Sobre Nos
-- [WA-56] Versão do projeto no radapé 
 
 ### Corrigido 
 - [WA-48] Botão para enviar notificação ao cliente por e-mail
@@ -36,12 +35,9 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Página completa de Desenvolvimento de Software (/servicos/desenvolvimento)
 - Seções: Hero, Tech Stack, Processo de Desenvolvimento, Tipos de Projetos
 - Animações suaves no dropdown do menu de serviços
-<<<<<<< HEAD
 - [WA-46]: Nova pagina para servicos de venda de software 
-=======
 
 ### Alterado 
-- [WA-22]: Implementação dos Seos, Robots e Sitemap**
 - [WA-42]: Deploy na Vercel com pagina "em breve"
 - Header com dropdown animado para submenu de serviços
 - Logo agora é clicável e retorna para página inicial
@@ -62,6 +58,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - [WA-44] Conflito de texto resolvido: "Implementação de Software" na homepage vs "Implantação" no menu
 - [WA-44] Menu dropdown "Serviços > Implantação" agora redireciona corretamente para /servicos/implantacao
 - [WA-44] Página de implantação funcional com Header, Footer e conteúdo completo
+
 ---
 
 ## Links úteis
