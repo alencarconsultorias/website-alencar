@@ -108,7 +108,7 @@ export default function PoliticaDePrivacidadePage() {
       </p>
 
       <p className="mt-8">
-        <strong>Contato:</strong> <a href="mailto:contato@alencarconsultorias.com.br">contato@alencarconsultorias.com.br</a> | WhatsApp: +55 11 99999-9999
+        <strong>Contato:</strong> <a href="mailto:contato@alencarconsultorias.com.br">contato@alencarconsultorias.com.br</a>
       </p>
 
       <p className="mt-8 text-sm text-white/60">Última atualização: 28/10/2025</p>

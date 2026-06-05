@@ -26,6 +26,11 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-golden-primary">Serviços</h3>
             <ul className="space-y-2 text-white/80">
               <li>
+                <a href="/servicos/vendas" className="hover:text-golden-primary transition-colors">
+                  Vendas de Software
+                </a>
+              </li>
+              <li>
                 <a href="/servicos/implantacao" className="hover:text-golden-primary transition-colors">
                   Implantação de Software
                 </a>
@@ -36,24 +41,18 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/servicos/vendas" className="hover:text-golden-primary transition-colors">
-                  Vendas de Software
-                </a>
-              </li>
-              <li>
                 <a href="/servicos/desenvolvimento" className="hover:text-golden-primary transition-colors">
                   Desenvolvimento de Software
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <a href="/" className="hover:text-golden-primary transition-colors">
-                  Estratégica Financeira e Jurídica
+                <a href="/servicos/automacao" className="hover:text-golden-primary transition-colors">
+                  Segurança Residencial e Comercial
                 </a>
-                <span className="text-xs bg-golden-primary text-white px-2 py-0.5 rounded">Em breve</span>
               </li>
               <li className="flex items-center gap-2">
                 <a href="/" className="hover:text-golden-primary transition-colors">
-                  Segurança Residencial e Comercial
+                  Estratégica Financeira e Jurídica
                 </a>
                 <span className="text-xs bg-golden-primary text-white px-2 py-0.5 rounded">Em breve</span>
               </li>
@@ -72,7 +71,7 @@ export function Footer() {
               {/* <li>+55 (11) 99999-9999</li> */}
               <li>São Paulo, Brasil</li>
             </ul>
-            
+
             {/* Social Media Links */}
             <div className="mt-6">
               <h4 className="text-sm font-semibold mb-3 text-golden-primary">Siga-nos</h4>
