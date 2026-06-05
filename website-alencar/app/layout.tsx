@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Toaster } from "sonner"
 import { Suspense } from "react"
 import { ScrollToTop } from "@/components/scroll-to-top"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 import { StructuredData } from "@/components/structured-data"
 import "./globals.css"
 
@@ -94,6 +95,7 @@ export default function RootLayout({
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
+        <WhatsAppButton />
         <ScrollToTop />
         <Analytics />
         <Toaster richColors position="top-center" />

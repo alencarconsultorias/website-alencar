@@ -78,7 +78,7 @@ export function Footer() {
               <h4 className="text-sm font-semibold mb-3 text-golden-primary">Siga-nos</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://wa.me/551199999999" /* Em breve numero novo da Alencar*/
+                  href="https://wa.me/5511943854636"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-golden-primary transition-colors p-2 rounded-full hover:bg-white/10"
