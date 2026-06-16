@@ -4,16 +4,16 @@ import Link from "next/link"
 export function ServicesSection() {
   const services = [
     {
-      title: "Implantação de Software",
-      description: "Implementação completa de soluções de software personalizadas para sua empresa, garantindo integração perfeita com seus processos existentes",
-      image: "/home/services/business-consulting-technology-workspace.jpg",
-      link: "/servicos/implantacao",
-    },
-    {
       title: "Vendas de Software",
       description: "Comercialização de soluções de software inovadoras, oferecendo as melhores tecnologias para impulsionar o crescimento do seu negócio",
       image: "/home/services/professional-business-team-working-with-technology.jpg",
       link: "/servicos/vendas",
+    },
+    {
+      title: "Implantação de Software",
+      description: "Implementação completa de soluções de software personalizadas para sua empresa, garantindo integração perfeita com seus processos existentes",
+      image: "/home/services/business-consulting-technology-workspace.jpg",
+      link: "/servicos/implantacao",
     },
     {
       title: "Suporte e Atendimento ao Cliente",
@@ -26,12 +26,6 @@ export function ServicesSection() {
       description: "Criação de aplicações personalizadas e sistemas sob medida, desenvolvidos com as mais modernas tecnologias e metodologias ágeis",
       image: "/home/services/computer-science-innovation-technology.jpg",
       link: "/servicos/desenvolvimento",
-    },
-    {
-      title: "Fluxo Financeiro e Jurídico",
-      description: "Soluções especializadas em gestão financeira e compliance jurídico para empresas de software, garantindo conformidade e eficiência operacional",
-      image: "/home/services/modern-technology-innovation-digital-transformatio.jpg",
-      link: "#",
     },
   ]
 
