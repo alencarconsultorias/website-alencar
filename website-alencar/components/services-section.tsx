@@ -5,25 +5,25 @@ export function ServicesSection() {
   const services = [
     {
       title: "Vendas de Software",
-      description: "Comercialização de soluções de software inovadoras, oferecendo as melhores tecnologias para impulsionar o crescimento do seu negócio",
+      description: "Representamos e comercializamos soluções de software de qualquer segmento, conectando empresas às melhores tecnologias do mercado.",
       image: "/home/services/professional-business-team-working-with-technology.jpg",
       link: "/servicos/vendas",
     },
     {
       title: "Implantação de Software",
-      description: "Implementação completa de soluções de software personalizadas para sua empresa, garantindo integração perfeita com seus processos existentes",
+      description: "Conduzimos a implantação completa de qualquer software, adaptando processos e preparando sua equipe para operar com excelência.",
       image: "/home/services/business-consulting-technology-workspace.jpg",
       link: "/servicos/implantacao",
     },
     {
       title: "Suporte e Atendimento ao Cliente",
-      description: "Assistência técnica especializada e suporte contínuo para garantir o funcionamento otimizado de suas soluções de software",
+      description: "Suporte técnico especializado e atendimento contínuo para garantir que seu software funcione sem interrupções, independentemente da solução.",
       image: "/home/services/business-handshake-partnership-professional-meetin.jpg",
       link: "/servicos/suporte",
     },
     {
       title: "Desenvolvimento de Software",
-      description: "Criação de aplicações personalizadas e sistemas sob medida, desenvolvidos com as mais modernas tecnologias e metodologias ágeis",
+      description: "Criamos aplicações e sistemas sob medida — do zero ou adaptando soluções existentes — com tecnologias modernas e metodologias ágeis.",
       image: "/home/services/computer-science-innovation-technology.jpg",
       link: "/servicos/desenvolvimento",
     },

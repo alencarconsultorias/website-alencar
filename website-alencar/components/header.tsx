@@ -85,14 +85,14 @@ export function Header() {
                   Serviços
                 </a>
                 <div className="mt-2 ml-4 flex flex-col space-y-2">
+                  <a href="/servicos/vendas" className="text-sm text-foreground/80 hover:text-golden-primary transition-colors">
+                    Venda
+                  </a>
                   <a href="/servicos/implantacao" className="text-sm text-foreground/80 hover:text-golden-primary transition-colors">
                     Implantação
                   </a>
                   <a href="/servicos/suporte" className="text-sm text-foreground/80 hover:text-golden-primary transition-colors">
                     Suporte
-                  </a>
-                  <a href="#servicos-venda" className="text-sm text-foreground/80 hover:text-golden-primary transition-colors">
-                    Venda
                   </a>
                   <a href="/servicos/desenvolvimento" className="text-sm text-foreground/80 hover:text-golden-primary transition-colors">
                     Desenvolvimento de Software
