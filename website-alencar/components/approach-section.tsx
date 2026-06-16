@@ -13,7 +13,7 @@ export function ApproachSection() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 text-balance">10 anos de experiência em tecnologia</h2>
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 text-balance">15+ anos de experiência em tecnologia</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
             Explore nossos serviços para adequar o seu modelo de negócio e melhorar o seu padrão de qualidade, seja qual for o software.
           </p>

@@ -12,10 +12,10 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: {
-    default: "Alencar Consultorias - Transformação Digital e Tecnologia",
+    default: "Alencar Consultorias - Venda, Implantação, Suporte e Desenvolvimento de Software",
     template: "%s | Alencar Consultorias"
   },
-  description: "Líder em soluções tecnológicas para empresas. Consultoria especializada, desenvolvimento de software e transformação digital. Impulsione seu negócio com nossas soluções inovadoras.",
+  description: "Parceiro completo para empresas que precisam comercializar, implantar, manter ou desenvolver soluções de software — de qualquer segmento. São Paulo, Brasil.",
   keywords: [
     "consultoria tecnológica",
     "transformação digital", 
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://alencarconsultorias.com.br",
-    title: "Alencar Consultorias - Transformação Digital e Tecnologia",
-    description: "Líder em soluções tecnológicas para empresas. Consultoria especializada, desenvolvimento de software e transformação digital.",
+    title: "Alencar Consultorias - Venda, Implantação, Suporte e Desenvolvimento de Software",
+    description: "Parceiro completo para empresas que precisam comercializar, implantar, manter ou desenvolver soluções de software — de qualquer segmento.",
     siteName: "Alencar Consultorias",
     images: [
       {
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alencar Consultorias - Transformação Digital e Tecnologia",
-    description: "Líder em soluções tecnológicas para empresas. Consultoria especializada, desenvolvimento de software e transformação digital.",
+    title: "Alencar Consultorias - Venda, Implantação, Suporte e Desenvolvimento de Software",
+    description: "Parceiro completo para empresas que precisam comercializar, implantar, manter ou desenvolver soluções de software — de qualquer segmento.",
     images: ["/og-image.jpg"],
     creator: "@alencarconsultorias",
   },

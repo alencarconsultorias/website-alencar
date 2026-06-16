@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
+import Image from "next/image"
 
 export function ServicesSection() {
   const services = [
@@ -32,7 +33,7 @@ export function ServicesSection() {
   return (
     <section id="servicos" className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <Link href={service.link} key={index} className="group">
               <Card
@@ -40,9 +41,11 @@ export function ServicesSection() {
               >
                 <CardContent className="p-0">
                   <div className="aspect-video mb-6 rounded-lg overflow-hidden">
-                    <img
+                    <Image
                       src={service.image || "/placeholder.svg"}
                       alt={service.title}
+                      width={480}
+                      height={270}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

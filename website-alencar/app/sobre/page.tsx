@@ -26,7 +26,7 @@ export default function AboutPage() {
     { icon: Flag, title: "Implantação", desc: "Metodologia comprovada para implementar sistemas com segurança e rapidez." },
     { icon: Users, title: "Suporte", desc: "Atendimento contínuo e orientado a performance operacional." },
     { icon: Rocket, title: "Marketing", desc: "Estratégias digitais para alavancar posicionamento e geração de demanda." },
-    { icon: Building2, title: "Desenvolvimento (em breve)", desc: "Soluções sob medida para acelerar sua transformação digital." },
+    { icon: Building2, title: "Desenvolvimento", desc: "Soluções sob medida para acelerar sua transformação digital." },
   ]
 
   return (
@@ -251,7 +251,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-2xl shadow-md px-6 py-5 w-full flex items-center justify-center">
                 <Image
-                  src="https://static.wixstatic.com/media/a7e8e4_958a8418c0e8428a87310845ee2811b4~mv2.png/v1/fill/w_323,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Nova%20Vallysys-curvas2.png"
+                  src="/partners/vallysys-logo.png"
                   alt="Vallysys Sistemas"
                   width={323}
                   height={74}
@@ -300,7 +300,7 @@ export default function AboutPage() {
                 <Link href="/#contato">Fale Conosco</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white hover:text-golden-primary px-8 py-6 text-lg">
-                <Link href="/servicos/implantacao">Conheça Nossos Serviços</Link>
+                <Link href="/#servicos">Conheça Nossos Serviços</Link>
               </Button>
             </div>
             <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-white/10">
